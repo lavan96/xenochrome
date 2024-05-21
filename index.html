@@ -167,6 +167,19 @@
 }
 
 
+@media screen and (min-width: 769px) {
+
+.web {
+    display: flex;
+}
+
+.mobile {
+    display: none;
+}
+
+}
+
+
 @media screen and (max-width: 768px) {
    
  
@@ -204,6 +217,18 @@ header{
 
 h1{
     font-size: 2.5em;
+}
+
+.mobile {
+    display: block;
+}
+
+.web {
+    display: none;
+}
+
+#services{
+    margin-top: 15em;
 }
 }
     </style>
@@ -243,7 +268,49 @@ h1{
             <h1 class="mb-4" style="margin-top: 100px;">Empower Your Business With Us</h1>
             <p style="margin-bottom: 100px;">Experience a seamless workflow automation that guarantees increased productivity and cost effectiveness.</p>
             
-            <div class="row">
+            <div class="row mobile">
+                <div class="col-md-6 mb-4">
+                <img src="xenochrome-home-1.jpg" alt="Xenochrome Technologies" class="img-fluid card-img" style="width:100%">  
+                        
+                    
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card" style="background-color: transparent; text-align: left;">
+                        <div class="card-body">
+                            <p style="color: #ff0000; font-family: 'Manrope', sans-serif;">Witness Remarkable Growth</p>
+                            <h3 class="card-title" style="font-family: 'Ubuntu', sans-serif; font-size: 50px;">Lead Generation Automation</h3>
+                            <p style="color: #ff6262;">Automate your lead generation process with our cutting-edge AI, optimizing for quality and quantity.</p>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fa-sharp fa-solid fa-check" style="color: #FF0000;"></i></span>Quality Lead Sources</li>
+                                <li><span class="fa-li"><i class="fa-sharp fa-solid fa-check" style="color: #FF0000;"></i></span>High Conversion Rates</li>
+                                <li><span class="fa-li"><i class="fa-sharp fa-solid fa-check" style="color: #FF0000;"></i></span>Automated Follow-ups</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+                <div class="row mobile">
+                    <div class="col-md-6 mb-4">
+                                <img src="xenochrome-home-2.jpg" alt="Xenochrome Technologies" class="img-fluid card-img" style="width:100%">  
+                          
+                    </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card" style="background-color: transparent; text-align: left;">
+                        <div class="card-body">
+                            <p style="color: #ff0000; font-family: 'Manrope', sans-serif;">Maximize Client Engagement</p>
+                            <h3 class="card-title" style="font-family: 'Ubuntu', sans-serif; font-size: 50px;">Client Outreach Automation</h3>
+                            <p style="color: #ff6262;">Get auto-reminders, automated emails and meticulously curated outreach strategies for each client.</p>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fa-sharp fa-solid fa-check" style="color: #FF0000;"></i></span>Automated Reminder System</li>
+                                <li><span class="fa-li"><i class="fa-sharp fa-solid fa-check" style="color: #FF0000;"></i></span>Custom Outreach Strategies</li>
+                                <li><span class="fa-li"><i class="fa-sharp fa-solid fa-check" style="color: #FF0000;"></i></span>Prioritizing Client Interactions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+</div>
+            <div class="row web">
                 <div class="col-md-6 mb-4">
                     <div class="card .card-img" style="background-color: #9f0000; border-radius: 10%; height: fit-content; margin-bottom: 100px;">
                         <div class="card-body" style="padding: 30px;">
@@ -265,8 +332,8 @@ h1{
                         </div>
                     </div>
                 </div>
-                
-                <div class="row">
+               </div> 
+                <div class="row web">
                 <div class="col-md-6 mb-4">
                     <div class="card" style="background-color: transparent; text-align: left;">
                         <div class="card-body">
@@ -289,6 +356,7 @@ h1{
                     </div>
                 </div>
             </div>
+        
         </section>
         <section id="services" class="mb-5">
             <h1 class="mb-4">Explore Our Wide Services</h1>

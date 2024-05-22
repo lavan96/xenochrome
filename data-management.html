@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Automations - Xenochrome Technologies</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Bebas+Neue&family=Ubuntu:wght@700&family=Manrope:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #000;
+            color: white;
+            text-align: justify;
+        }
+        h1, h2{
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h2{
+            font-size: 55px; 
+            margin-top: 50px;
+        }
+        h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        h4 {
+            font-family: 'Roboto Mono', sans-serif;
+            font-size: 25px;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        .header {
+            background-color: #000;
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 0px;
+        }
+        .header img {
+            max-width: 150px;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: white;
+            text-transform: uppercase;
+        }
+        .about-section {
+            padding: 0px;
+        }
+        .about-section h2 {
+            margin-bottom: 10px;
+        }
+        .about-section p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .about-section .section-title {
+            color: #31a905ff;
+        }
+        .about-section .about-content {
+            margin-bottom: 0px;
+        }
+        .about-section .logo-img {
+            max-width: 70%;
+            height: 90vh;
+            display: flex;
+            
+        }
+        footer {
+    background-color: #000;
+    color: white;
+    padding: 50px 0;
+}
+.footer-logo {
+    max-width: 200px;
+}
+.footer-section {
+    margin-bottom: 20px;
+}
+.footer-section h3 {
+    color: #ff0000;
+    margin-bottom: 15px;
+    font-family: 'Manrope', sans-serif;
+}
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+.footer-section a:hover {
+    color: #ff0000;
+}
+.social-icons a {
+    color: #ff0000;
+    font-size: 24px;
+    margin-right: 15px;
+}
+.social-icons a:hover {
+    color: white;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+}
+.header .header-logo {
+            max-width: 220px;
+            
+        }
+    
+
+.navbar a:hover{
+    color: red;
+}
+
+.navbar a{
+    color: white;
+    text-transform: uppercase;
+}
+
+    
+#thumbnail img{
+    height: 70vh;
+    margin-bottom: 30px;
+}
+
+#flow img {
+    height: 50vh;
+}
+.fa-shopify {
+    font-size: 300px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+}
+
+@media screen and (max-width: 768px) {
+   
+ 
+   nav{
+   
+       text-align: right;
+       text-transform: uppercase;
+       font-weight: 900;
+       font-size: 1.2em;
+       color: #ffffffff;
+       
+   }
+   .navbar-nav{
+      
+       padding: 1em;
+       margin-top: 1em;
+       margin-bottom: 1em;
+   }
+   
+   .navbar a:hover{
+    color: red;
+   }
+   
+   #header-logo {
+            max-width: 7em;
+        }
+
+   .header-content img {
+       min-width: 100%;
+       margin-top: 5em;
+   }
+#logo-img{
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+    background-size: contain;
+}
+  
+h2{
+    font-size: 2.5em;
+    margin-bottom: 150px;
+   
+}
+
+.about-section h3{
+    text-align: left;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+    font-size: 2em;
+}
+.about-section{
+    padding: 1em;
+}
+
+#thumbnail img{
+    
+    width: 100%;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+#flow img{
+    
+    width: 100%;
+    height: auto;
+    
+}
+
+.fa-shopify {
+    font-size: 15em;
+    
+
+}
+   }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container"><nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img src="XENOCHROME-NOBG-TEXT.png" alt="Xenochrome Technologies" class="header-logo" id="header-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgba(0, 0, 0, 0.4); border-color: #FF0000;">
+                <span class="navbar-toggler-icon" style="align-content: center;"><i class="fa-solid fa-bars" style="color: #FF0000;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto" style="font-family: 'Roboto Condensed', sans-serif;">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </div>
+        </nav>
+    </div>
+    </header>
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="data-management.png" alt="Xenochrome Logo" class="logo-img" id="logo-img">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 about-content">
+                    <h2 style="font-family: 'Ubuntu', sans-serif; text-align: left; margin-bottom: 40px;">Welcome to our Data Automation Solutions!</h2>
+                </div> 
+            </div>   
+            <div class="container" id="thumbnail"><img src="data-management.webp" alt="">   </div> 
+            <h3 class="section-title" style="font-weight: 600;">Unlock the power of data captured from interactions with chatbots with our comprehensive backend automations. Seamlessly integrate with databases of your choice and harness valuable insights to propel your business forward.</h3>
+            <div class="container" id="flow"><img src="data-flow.png" alt="">   </div>        
+                    <h4 class="section-title" style="color: white;">Effortless Data Management:</h3>
+                    <p style="color: #31a905ff;">Our backend automations ensure that every piece of data captured from interactions with chatbots is efficiently processed and stored in your preferred databases. From customer inquiries and preferences to transactional details, our solutions streamline data management, enabling you to make informed decisions and drive business growth.</p>
+                    <h4 class="section-title" style="color: white;">Build Targeted Email Lists:</h3>
+                    <p style="color: #31a905ff;">Leverage the wealth of warm traffic generated by your chatbots to build extensive email lists for your retargeting campaigns. Our automations intelligently segment leads based on their interactions and behaviors, ensuring that your email lists are highly targeted and receptive to your marketing efforts. Say goodbye to cold outreach and hello to engaged audiences ready to convert.</p>
+                    <h4 class="section-title" style="color: white;">Enhance Retargeting Campaigns:</h3>
+                        <p style="color: #31a905ff;">With access to comprehensive email lists comprised entirely of warm traffic, your retargeting campaigns are set up for success. Deliver personalized and relevant content to your audience, driving conversions and maximizing ROI. Our backend automations empower you to create dynamic retargeting strategies that resonate with your customers and keep them coming back for more.</p>
+                </div>
+            </div> 
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container" style="text-align: center; margin-top: 100px; font-family: 'Manrope', sans-serif;">
+            <div class="row">
+                <div class="col-md-4 footer-section">
+                    <img src="XENOCHROME-NOBG-TEXT.png" alt="Xenochrome Technologies" class="footer-logo" style="size: 100%; margin-bottom: 30px;">
+                    <p>At Xenochrome Technologies, we specialize in AI automation solutions, optimizing and simplifying major operational workflows.</p>
+                </div>
+                <div class="col-md-4 footer-section">
+                    <h3>Links</h3>
+                    <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html">Contact</a>
+                </div>
+                <div class="col-md-4 footer-section">
+                    <h3>Contact</h3>
+                    <p>info@xenochrometech.com<br>+6018-2548567</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Xenochrome Technologies</p>
+                <p><a href="#terms">Terms & Conditions</a>, <a href="#privacy">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Agents - Xenochrome Technologies</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Bebas+Neue&family=Ubuntu:wght@700&family=Manrope:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #000;
+            color: white;
+            text-align: justify;
+        }
+        h1, h2{
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h2{
+            font-size: 55px; 
+            margin-top: 50px;
+        }
+        h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        h4 {
+            font-family: 'Roboto Mono', sans-serif;
+            font-size: 25px;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        .header {
+            background-color: #000;
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 0px;
+        }
+        .header img {
+            max-width: 150px;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: white;
+            
+        }
+        .about-section {
+            padding: 0px;
+        }
+        .about-section h2 {
+            margin-bottom: 10px;
+        }
+        .about-section p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .about-section .section-title {
+            color: #ff0099ff;
+        }
+        .about-section .about-content {
+            margin-bottom: 0px;
+        }
+        .about-section .logo-img {
+            max-width: 70%;
+            height: 90vh;
+            display: flex;
+            
+        }
+        footer {
+    background-color: #000;
+    color: white;
+    padding: 50px 0;
+}
+.footer-logo {
+    max-width: 200px;
+}
+.footer-section {
+    margin-bottom: 20px;
+}
+.footer-section h3 {
+    color: #ff0000;
+    margin-bottom: 15px;
+    font-family: 'Manrope', sans-serif;
+}
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+.footer-section a:hover {
+    color: #ff0000;
+}
+.social-icons a {
+    color: #ff0000;
+    font-size: 24px;
+    margin-right: 15px;
+}
+.social-icons a:hover {
+    color: white;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+}
+.header .header-logo {
+            max-width: 220px;
+            
+        }
+    
+
+.navbar a:hover{
+    color: red;
+}
+
+.navbar a{
+    color: white;
+    text-transform: uppercase;
+}
+
+    
+#thumbnail img{
+    height: 70vh;
+    margin-bottom: 30px;
+}
+
+.fa-shopify {
+    font-size: 300px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+}
+
+.card {
+            background-color: transparent;
+            
+            padding: 0px;
+            margin-bottom:  30px;
+            text-align: left;
+           
+           
+
+        }
+       
+        .card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            
+            border-radius: 20px;
+        }
+        .card h3 {
+            
+            font-family: 'Roboto Mono', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            
+            
+            margin-left: 0.5em;
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: block;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            width: 150px;
+        }
+        .btn-yellow {
+            background-color: transparent;
+            color: #f8e71cff;
+            border: 1px solid #f8e71cff;
+        }
+
+        .btn-yellow:hover {
+            background-color: #f8e71cff;
+            color: black;
+            border: 1px solid #f8e71cff;
+        }
+        .btn-red {
+            background-color: transparent;
+            color: red;
+            border: 1px solid red;
+        }
+
+        .btn-red:hover {
+            background-color: red;
+            color: black;
+            border: 1px solid red;
+        }
+
+        .btn-cyan {
+            background-color: transparent;
+            color: #00bbe5ff;
+            border: 1px solid #00bbe5ff;
+        }
+
+        .btn-cyan:hover {
+            background-color: #00bbe5ff;
+            color: black;
+            border: 1px solid #00bbe5ff;
+        }
+
+        #demo {
+            margin-bottom: 100px;
+            margin-top: 60px;
+        }
+
+@media screen and (min-width: 769px) {
+    .demo-mobile{ display: none;}
+
+    .demo-web{ display: block;}
+}
+
+@media screen and (max-width: 768px) {
+   
+ 
+   nav{
+   
+       text-align: right;
+       text-transform: uppercase;
+       font-weight: 900;
+       font-size: 1.2em;
+       color: #ffffffff;
+       
+   }
+   .navbar-nav{
+      
+       padding: 1em;
+       margin-top: 1em;
+       margin-bottom: 1em;
+   }
+   
+   .navbar a:hover{
+    color: red;
+   }
+   
+   #header-logo {
+            max-width: 7em;
+        }
+
+   .header-content img {
+       min-width: 100%;
+       margin-top: 5em;
+   }
+#logo-img{
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+    background-size: contain;
+}
+  
+h2{
+    font-size: 2.5em;
+    margin-bottom: 150px;
+   
+}
+
+.about-section h3{
+    text-align: left;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+    font-size: 2em;
+}
+.about-section{
+    padding: 1em;
+}
+
+#thumbnail img{
+    
+    width: 100%;
+    height: auto;
+    margin-bottom: 3em;
+}
+
+.fa-shopify {
+    font-size: 15em;
+    
+
+}
+.card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            vertical-align: middle;
+            border-radius: 20px;
+        }
+        .card h3 {
+            
+            font-family: 'Roboto Mono', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            
+            
+            padding-left: 3em;
+            
+        }
+
+        .card {
+            max-height: fit-content;
+        }
+
+        #demo {
+            margin-bottom: 100px;
+            margin-top: 60px;
+        }
+
+        .demo-web {
+            display: none;
+        }
+
+        .demo-mobile {
+            display: block;
+            
+        }
+
+       .demo-mobile h3 {
+        text-align: left;
+        margin-left: 0.5em;
+        
+       }
+
+       .demo-mobile .row {
+        margin-right: 0;
+        padding-right: 0;
+        column-gap: 0px;
+       }
+
+      
+   }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container"><nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img src="XENOCHROME-NOBG-TEXT.png" alt="Xenochrome Technologies" class="header-logo" id="header-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgba(0, 0, 0, 0.4); border-color: #FF0000;">
+                <span class="navbar-toggler-icon" style="align-content: center;"><i class="fa-solid fa-bars" style="color: #FF0000;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto" style="font-family: 'Roboto Condensed', sans-serif;">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </div>
+        </nav>
+    </div>
+    </header>
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="voice-agents.png" alt="Xenochrome Logo" class="logo-img" id="logo-img">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 about-content">
+                    <h2 style="font-family: 'Ubuntu', sans-serif; text-align: left; margin-bottom: 40px;">Welcome to Voice Agents: Your Personalized Voice Assistant Solution!</h2>
+                </div> 
+            </div>   
+            <div class="container" id="thumbnail"><img src="voice agent 2.webp" alt="">   </div> 
+            <h3 class="section-title" style="font-weight: 600;">Voice Agents revolutionize the way businesses interact with customers, offering both inbound and outbound capabilities to streamline communication and enhance brand reputation. From answering customer queries to making follow-up calls, our voice agents are your trusted partners in delivering exceptional customer experiences.</h3>
+                   
+                    <h4 class="section-title" style="color: white;">Inbound Voice Agents:</h3>
+                    <p style="color: #ff0099ff;">Empower your customers with instant access to information and support through our inbound voice agents. Trained with custom knowledge bases specific to your business, our agents are equipped to handle any query or concern with efficiency and accuracy. Whether customers call in for assistance or guidance, our voice agents ensure a seamless experience that leaves a lasting impression.</p>
+                    <div class="container demo-web" id="demo">
+                        <div class="card yellow-card">
+                            <div class="row">
+                                <div class="col-1"><img src="yellowtree-logo.ai.png" alt="Yellow Tree Logo"></div>
+                                <div class="col-11" style="flex-direction: row; align-content: center; width: fit-content;"><h3 style="color: #f8e71cff;">Yellow Tree<br> Voice Agent</h3></div>
+                 
+                        </div>
+                           <div class="row">
+                            <div class="col-md-4">
+                                <a href="https://lavan96.github.io/yellowtreeassistant/" class="btn btn-yellow">TRY NOW</a>
+                            </div>
+                           </div> 
+                        </div>
+                        <div class="card red-card">
+                            <div class="row">
+                                <div class="col-1" ><img src="autoflow.png" alt="AutoFlow Logo"></div>
+                                <div class="col-11" style="flex-direction: row; align-content: center; width: fit-content;"><h3 style="color: red;">AutoFlow Voice<br> Agent</h3></div>
+                 
+                        </div>
+                           <div class="row">
+                            <div class="col-md-4">
+                                <a href="https://lavan96.github.io/autoflowassistant/" class="btn btn-red">TRY NOW</a>
+                            </div>
+                           </div> 
+                        </div>
+
+                        <div class="card cyan-card">
+                            <div class="row">
+                                <div class="col-1" ><img src="dental.png" alt="AutoFlow Logo"></div>
+                                <div class="col-11" style="flex-direction: row; align-content: center; width: fit-content;"><h3 style="color: #00bbe5ff;">Dental Clinic<br> Voice Agent</h3></div>
+                 
+                        </div>
+                           <div class="row">
+                            <div class="col-md-4">
+                                <a href="https://lavan96.github.io/autoflowassistant/" class="btn btn-cyan">TRY NOW</a>
+                            </div>
+                           </div> 
+                        </div>
+                    </div>
+
+
+                    <div class="container demo-mobile" id="demo">
+                        <div class="card yellow-card">
+                            <div class="row">
+                                <div class="col-2"><img src="yellowtree-logo.ai.png" alt="Yellow Tree Logo"></div>
+                                <div class="col-10.5" style="flex-direction: row; align-content: center; width: fit-content;"><h3 style="color: #f8e71cff;">Yellow Tree<br> Voice Agent</h3></div>
+                 
+                        </div>
+                           <div class="row">
+                            <div class="col-md-4">
+                                <a href="https://vapi.ai?demo=true&shareKey=4f6a0df7-ee52-40bc-8a41-f131d9fac222&assistantId=23f3a02a-b007-4233-987f-b28ca364c9cc" class="btn btn-yellow">TRY NOW</a>
+                            </div>
+                           </div> 
+                        </div>
+                        <div class="card red-card">
+                            <div class="row">
+                                <div class="col-2" ><img src="autoflow.png" alt="AutoFlow Logo"></div>
+                                <div class="col-10.5" style="flex-direction: row; align-content: center; width: fit-content;"><h3 style="color: red;">AutoFlow Voice<br> Agent</h3></div>
+                 
+                        </div>
+                           <div class="row">
+                            <div class="col-md-4">
+                                <a href="https://vapi.ai?demo=true&shareKey=4f6a0df7-ee52-40bc-8a41-f131d9fac222&assistantId=7beabed3-6bbb-430d-8648-29718e9cd647" class="btn btn-red">TRY NOW</a>
+                            </div>
+                           </div> 
+                        </div>
+
+                        <div class="card cyan-card">
+                            <div class="row">
+                                <div class="col-2" ><img src="dental.png" alt="AutoFlow Logo"></div>
+                                <div class="col-10.5" style="flex-direction: row; align-content: center; width: fit-content;"><h3 style="color: #00bbe5ff;">Dental Clinic<br>Voice Agent</h3></div>
+                 
+                        </div>
+                           <div class="row">
+                            <div class="col-md-4">
+                                <a href="https://vapi.ai?demo=true&shareKey=4f6a0df7-ee52-40bc-8a41-f131d9fac222&assistantId=aa1a4037-720f-4bf4-b9c1-9826647a59b2" class="btn btn-cyan">TRY NOW</a>
+                            </div>
+                           </div> 
+                        </div>
+                    </div>
+
+
+                    <h4 class="section-title" style="color: white;">Outbound Voice Agents:</h3>
+                    <p style="color: #ff0099ff;">Take proactive engagement to the next level with our outbound voice agents. Triggered by user actions on your website or chatbot, our agents reach out to clients and leads for follow-ups, appointment confirmations, and more. With personalized outreach and timely communication, our voice agents help nurture relationships and drive conversions, without the need for massive sales departments.</p>
+                    <h4 class="section-title" style="color: white;">Enhance Your Brand Reputation:</h3>
+                        <p style="color: #ff0099ff;">With Voice Agents, you can elevate your brand reputation by providing exceptional customer service and proactive support. Our agents embody your brand values and voice, ensuring consistent and memorable interactions with every customer touchpoint. From building trust to fostering loyalty, our voice agents play a crucial role in shaping how your brand is perceived by customers.</p>
+
+                    
+                </div>
+            </div> 
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container" style="text-align: center; margin-top: 100px; font-family: 'Manrope', sans-serif;">
+            <div class="row">
+                <div class="col-md-4 footer-section">
+                    <img src="XENOCHROME-NOBG-TEXT.png" alt="Xenochrome Technologies" class="footer-logo" style="size: 100%; margin-bottom: 30px;">
+                    <p>At Xenochrome Technologies, we specialize in AI automation solutions, optimizing and simplifying major operational workflows.</p>
+                </div>
+                <div class="col-md-4 footer-section">
+                    <h3>Links</h3>
+                    <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html">Contact</a>
+                </div>
+                <div class="col-md-4 footer-section">
+                    <h3>Contact</h3>
+                    <p>info@xenochrometech.com<br>+6018-2548567</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Xenochrome Technologies</p>
+                <p><a href="#terms">Terms & Conditions</a>, <a href="#privacy">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

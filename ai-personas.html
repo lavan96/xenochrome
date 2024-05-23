@@ -139,6 +139,69 @@
 
 }
 
+.card {
+            background-color: transparent;
+            
+            padding: 0px;
+            margin-bottom:  30px;
+            text-align: left;
+           
+           
+
+        }
+       
+        .card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            
+            border-radius: 20px;
+        }
+        .card h3 {
+            
+            font-family: 'Roboto Mono', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            
+            
+            margin-left: 0.5em;
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: block;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            width: 150px;
+        }
+
+#demo {
+            margin-bottom: 100px;
+            margin-top: 60px;
+        }
+
+.btn-back {
+            width: 60px;
+            height: 60px;
+            background-color: #50e3c2ff;
+            
+            border: 2px solid #50e3c2ff;
+            font-size: 20px;
+            border-radius: 15px;
+            text-align: justify;
+            padding: auto;
+            
+
+        }
+
+        @media screen and (min-width: 769px) {
+    .demo-mobile{ display: none;}
+
+    .demo-web{ display: block;}
+}
+
 @media screen and (max-width: 768px) {
    
  
@@ -205,6 +268,54 @@ h2{
     
 
 }
+
+.card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            vertical-align: middle;
+            border-radius: 20px;
+        }
+        .card h3 {
+            
+            font-family: 'Roboto Mono', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            
+            
+            padding-left: 3em;
+            
+        }
+
+        .card {
+            max-height: fit-content;
+        }
+
+        #demo {
+            margin-bottom: 100px;
+            margin-top: 60px;
+        }
+
+        .demo-web {
+            display: none;
+        }
+
+        .demo-mobile {
+            display: block;
+            
+        }
+
+       .demo-mobile h3 {
+        text-align: left;
+        margin-left: 0.5em;
+        
+       }
+
+       .demo-mobile .row {
+        margin-right: 0;
+        padding-right: 0;
+        column-gap: 0px;
+       }
    }
 
     </style>
@@ -252,7 +363,34 @@ h2{
                         <p style="color: #50e3c2ff;">Maintaining a consistent brand image is crucial for building trust and credibility. With AI Personas, you can ensure that every interaction reflects your brand's values and messaging. Your AI persona is programmed to embody your voice, tone, and style, delivering a seamless experience to your audience across channels and touchpoints.</p>
                         <h4 class="section-title" style="color: white;">Efficiency and Productivity:</h3>
                             <p style="color: #50e3c2ff;">Say goodbye to time-consuming tasks and hello to enhanced productivity. Your AI persona works tirelessly, handling repetitive tasks and freeing up your time to focus on high-value activities. Whether it's responding to inquiries, generating leads, or providing support, your AI persona is always on, ensuring that your business operates smoothly and efficiently.</p>
-                </div>
+                
+                
+                            <div class="container demo-web" id="demo">
+                        
+                                <div class="card back-card">
+                                    <div class="row">
+                                        <div class="col-1" > <a href="services.html"><button type="button" class="btn btn-back" href="services.html"><i class="fa-solid fa-arrow-left" style="color: black;" href="services.html"></i></button></a></div>
+                                        <div class="col-11.5" style="flex-direction: column; align-content: center; padding-top: 15px;"><h3 style="color: white; vertical-align: middle;">Back to<br> Services</h3></div>
+                         
+                                </div>
+                                   
+                                </div>
+                            </div>
+        
+                            <div class="container demo-mobile" id="demo">
+                                
+                                <div class="card back-card">
+                                    <div class="row">
+                                        <div class="col-3"> <a href="services.html"><button type="button" class="btn btn-back" href="services.html"><i class="fa-solid fa-arrow-left" style="color: black;" href="services.html"></i></a></button></div>
+                                        <div class="col-9.5" style="flex-direction: row; align-content: center; width: fit-content; margin-left: -45px; padding-top: 4px;"><h3 style="color: white;">Back to<br> Services</h3></div>
+                         
+                                </div>
+                                   
+                                </div>
+                            </div>
+                        
+                        
+                        </div>
             </div> 
             </div>
         </div>

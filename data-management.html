@@ -142,6 +142,69 @@
 
 }
 
+.card {
+            background-color: transparent;
+            
+            padding: 0px;
+            margin-bottom:  30px;
+            text-align: left;
+           
+           
+
+        }
+       
+        .card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            
+            border-radius: 20px;
+        }
+        .card h3 {
+            
+            font-family: 'Roboto Mono', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            
+            
+            margin-left: 0.5em;
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: block;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            width: 150px;
+        }
+
+#demo {
+            margin-bottom: 100px;
+            margin-top: 60px;
+        }
+
+.btn-back {
+            width: 60px;
+            height: 60px;
+            background-color: #31a905ff;
+            
+            border: 2px solid #31a905ff;
+            font-size: 20px;
+            border-radius: 15px;
+            text-align: justify;
+            padding: auto;
+            
+
+        }
+
+        @media screen and (min-width: 769px) {
+    .demo-mobile{ display: none;}
+
+    .demo-web{ display: block;}
+}
+
 @media screen and (max-width: 768px) {
    
  
@@ -260,7 +323,32 @@ h2{
                     <p style="color: #31a905ff;">Ready to take your CRM to the next level? Our team is here to help. Whether you're upgrading to a more advanced CRM or migrating to a new platform, we ensure a smooth and hassle-free transition. From data mapping and extraction to migration and validation, we handle every step of the process with precision and care, minimizing downtime and ensuring data integrity.</p>
                     <h4 class="section-title" style="color: white;">Unlock the Power of Your Data:</h3>
                         <p style="color: #31a905ff;">Don't let messy databases hold you back. With our data management services, you can unlock the full potential of your data. Gain valuable insights, improve efficiency, and drive growth with clean, organized, and actionable data at your fingertips.</p>
-                </div>
+                
+                        <div class="container demo-web" id="demo">
+                        
+                            <div class="card back-card">
+                                <div class="row">
+                                    <div class="col-1" > <a href="services.html"><button type="button" class="btn btn-back" href="services.html"><i class="fa-solid fa-arrow-left" style="color: black;" href="services.html"></i></button></a></div>
+                                    <div class="col-11.5" style="flex-direction: column; align-content: center; padding-top: 15px;"><h3 style="color: white; vertical-align: middle;">Back to<br> Services</h3></div>
+                     
+                            </div>
+                               
+                            </div>
+                        </div>
+    
+                        <div class="container demo-mobile" id="demo">
+                            
+                            <div class="card back-card">
+                                <div class="row">
+                                    <div class="col-3"> <a href="services.html"><button type="button" class="btn btn-back" href="services.html"><i class="fa-solid fa-arrow-left" style="color: black;" href="services.html"></i></a></button></div>
+                                    <div class="col-9.5" style="flex-direction: row; align-content: center; width: fit-content; margin-left: -45px; padding-top: 4px;"><h3 style="color: white;">Back to<br> Services</h3></div>
+                     
+                            </div>
+                               
+                            </div>
+                        </div>
+
+                    </div>
             </div> 
             </div>
         </div>

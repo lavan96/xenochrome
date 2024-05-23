@@ -202,6 +202,12 @@
             margin-top: 60px;
         }
 
+@media screen and (min-width: 769px) {
+    .demo-mobile{ display: none;}
+
+    .demo-web{ display: block;}
+}
+
 @media screen and (max-width: 768px) {
    
  
@@ -282,23 +288,40 @@ h2{
             font-weight: 600;
             
             
-            padding-left: 50px;
+            padding-left: 3em;
             
         }
 
         .card {
             max-height: fit-content;
-            display: flex;
-            
-            justify-content: center;
-            text-align: center;
-            margin-bottom: 30px;
         }
 
         #demo {
             margin-bottom: 100px;
             margin-top: 60px;
         }
+
+        .demo-web {
+            display: none;
+        }
+
+        .demo-mobile {
+            display: block;
+            
+        }
+
+       .demo-mobile h3 {
+        text-align: left;
+        
+       }
+
+       .demo-mobile .row {
+        margin-right: 0;
+        padding-right: 0;
+        column-gap: 0px;
+       }
+
+      
    }
 
     </style>
@@ -340,10 +363,10 @@ h2{
                    
                     <h4 class="section-title" style="color: white;">For Customers/Clients:</h3>
                     <p style="color: red;">Interact seamlessly with your customers through our intuitive chatbots. From making orders and bookings to scheduling appointments, our chatbots facilitate smooth transactions, saving time and reducing friction in the customer journey. With the ability to track orders in real-time and capture valuable leads, our chatbots ensure that every interaction leaves a lasting impression. Need assistance? Our chatbots are equipped with robust customer service functionalities, providing prompt support and enhancing customer satisfaction.</p>
-                    <div class="container" id="demo">
+                    <div class="container demo-web" id="demo">
                         <div class="card yellow-card">
                             <div class="row">
-                                <div class="col-1" ><img src="yellowtree-logo.ai.png" alt="Yellow Tree Logo"></div>
+                                <div class="col-1"><img src="yellowtree-logo.ai.png" alt="Yellow Tree Logo"></div>
                                 <div class="col-11" style="flex-direction: row; align-content: center; width: fit-content;"><h3 style="color: #f8e71cff;">Yellow Tree<br> Assistant</h3></div>
                  
                         </div>
@@ -366,9 +389,39 @@ h2{
                            </div> 
                         </div>
                     </div>
+
+
+                    <div class="container demo-mobile" id="demo">
+                        <div class="card yellow-card">
+                            <div class="row">
+                                <div class="col-2"><img src="yellowtree-logo.ai.png" alt="Yellow Tree Logo"></div>
+                                <div class="col-10.5" style="flex-direction: row; align-content: center; width: fit-content;"><h3 style="color: #f8e71cff;">Yellow Tree<br> Assistant</h3></div>
+                 
+                        </div>
+                           <div class="row">
+                            <div class="col-md-4">
+                                <a href="https://lavan96.github.io/yellowtreeassistant/" class="btn btn-yellow">TRY NOW</a>
+                            </div>
+                           </div> 
+                        </div>
+                        <div class="card red-card">
+                            <div class="row">
+                                <div class="col-2" ><img src="autoflow.png" alt="AutoFlow Logo"></div>
+                                <div class="col-10.5" style="flex-direction: row; align-content: center; width: fit-content;"><h3 style="color: red;">AutoFlow<br> Assistant</h3></div>
+                 
+                        </div>
+                           <div class="row">
+                            <div class="col-md-4">
+                                <a href="https://lavan96.github.io/autoflowassistant/" class="btn btn-red">TRY NOW</a>
+                            </div>
+                           </div> 
+                        </div>
+                    </div>
+
+
                     <h4 class="section-title" style="color: white;">For Staff Training and Onboarding:</h3>
                     <p style="color: red;">Transform your internal processes with our specialized chatbots tailored for staff training and new hire onboarding. Say goodbye to lengthy manuals and tedious training sessions. Our chatbots act as virtual trainers, guiding staff through complex procedures and providing on-the-go support. From product knowledge to company policies, our chatbots ensure that every team member is equipped with the necessary skills to excel in their roles. Simplify onboarding for new hires and streamline training for existing staff with our innovative chatbot solutions.</p>
-                    <div class="container" id="demo">
+                    <div class="container demo-web" id="demo">
                         
                         <div class="card red-card">
                             <div class="row">
@@ -383,6 +436,23 @@ h2{
                            </div> 
                         </div>
                     </div>
+
+                    <div class="container demo-mobile" id="demo">
+                        
+                        <div class="card red-card">
+                            <div class="row">
+                                <div class="col-2" ><img src="autoflow.png" alt="AutoFlow Logo"></div>
+                                <div class="col-10.5" style="flex-direction: row; align-content: center; width: fit-content;"><h3 style="color: red;">AutoFlow Staff<br> Trainer</h3></div>
+                 
+                        </div>
+                           <div class="row">
+                            <div class="col-md-4">
+                                <a href="https://lavan96.github.io/autoflow-staff-trainer/" class="btn btn-red">TRY NOW</a>
+                            </div>
+                           </div> 
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div class="col-md-12 about-content">
                             <h2 style="font-family: 'Ubuntu', sans-serif; text-align: left; margin-bottom: 40px;">Introducing Seamless Integration with Shopify!</h2>                            </h2>

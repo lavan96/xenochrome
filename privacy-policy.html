@@ -3,27 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing - Xenochrome Technologies</title>
-    <meta name="description" content="Explore the pricing options for Xenochrome Technologies' AI automation solutions. We offer customized pricing to fit your specific needs and budget.">
-    <meta name="keywords" content="Pricing, Xenochrome Technologies, AI automation, custom pricing">
+    <title>Contact Us - Xenochrome Technologies</title>
+    <meta name="description" content="Get in touch with Xenochrome Technologies for expert AI automation solutions and support. Our team is here to assist you.">
+    <meta name="keywords" content="Contact, Xenochrome Technologies, AI automation, support">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Bebas+Neue&family=Ubuntu:wght@700&family=Manrope:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #000000;
+            background-color: #000;
             color: white;
             background-image: url('red-dark-abstract-art.jpg');
         }
-        h2{
-            font-size: 50px;
-        }
+      h2 {
+        font-size: 80px;
+        padding-bottom: 40px;
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: 600;
+      }
 
-        h3{
-            font-family: 'Poppins',  sans-serif;
-            font-size: 40px;
-        }
+      p {
+        color: #FF0000;
+      }
         .header {
             
             background-size: cover;
@@ -34,26 +36,40 @@
         .header img {
             max-width: 220px;
         }
-        .header-logo {
-            max-width: 220px;
-        }
         .navbar-dark .navbar-nav .nav-link {
             color: white;
-            font-family: 'Roboto Condensed', sans-serif ;
         }
-        .pricing-section {
-            padding-top: 20px;
+        .contact-section {
+            padding: 60px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
         }
-        .pricing-section h2 {
+        .contact-section h2 {
             margin-bottom: 20px;
             color: #ff0000;
         }
-        .pricing-section p {
+        .contact-section p {
             line-height: 1.8;
             margin-bottom: 20px;
-            color: #ff0000;
         }
-        .cta-button {
+        .contact-form {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            background-color: black;
+            border: 1px solid #ff0000;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #ff0000;
+            outline: none;
+        }
+        .contact-form .cta-button {
             background-color: #ff0000;
             color: white;
             border: none;
@@ -61,16 +77,12 @@
             border-radius: 50px;
             font-weight: 700;
             text-decoration: none;
-            margin-top: 50px;
-            margin-bottom: 100px;
         }
-        .cta-button:hover {
+        .contact-form .cta-button:hover {
             background-color: #e60000;
             color: white;
             text-decoration: none;
-          
         }
-
         footer {
     background-color: #000;
     color: white;
@@ -81,6 +93,7 @@
 }
 .footer-section {
     margin-bottom: 20px;
+    font-family: 'Manrope', sans-serif;
 }
 .footer-section h3 {
     color: #ff0000;
@@ -109,8 +122,13 @@
     border-top: 1px solid #333;
     padding-top: 10px;
 }
+.navbar-dark .navbar-nav .nav-link {
+            color: white;
+            font-family: 'Roboto Condensed', sans-serif ;
+            text-transform: uppercase;
+        }
 
-.navbar a:hover{
+        .navbar a:hover{
     color: red;
 }
 
@@ -120,10 +138,7 @@
     text-transform: uppercase;
 }
 
-.pricing-section img{
-    max-width: 500px;
-   }
-@media screen and (max-width: 768px) {
+        @media screen and (max-width: 768px) {
    
  
    nav{
@@ -159,18 +174,8 @@
     max-width: 100%;
     margin-bottom: 3em;
    }
-
-   h2{
-    font-size: 1.5em;
-    text-align: center;
-   }
-
-   h3{
-    font-size: 2em;
-   }
-body p{
-    text-align: justify;
-    font-size: 0.8em;
+h2 {
+    font-size: 4em;
 }
 
    }
@@ -181,7 +186,7 @@ body p{
     <header class="header">
         <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#">
-                <img src="XENOCHROME-NOBG-TEXT.png" alt="Xenochrome Technologies" class="header-logo" id="header-logo">
+                <img src="XENOCHROME-NOBG-TEXT.png" alt="Xenochrome Technologies" id="header-logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgba(0, 0, 0, 0.4); border-color: #FF0000;">
                 <span class="navbar-toggler-icon" style="align-content: center;"><i class="fa-solid fa-bars" style="color: #FF0000;"></i></span>
@@ -196,24 +201,43 @@ body p{
                 </ul>
             </div>
         </nav>
-        
+    
+        <div class="text-center" style="display: none;">
+            <img src="XENOCHROME-NOBG-01.png" alt="Xenochrome Logo" class="logo-img">
+        </div>
     </header>
-    <section class="pricing-section" style="background-color: rgba(0, 0, 0, 0.5); padding-left: 50px; padding-right: 50px; padding-bottom: 30px;">
+    <section class="contact-section">
+        <div class="container">
+            <h2 style="font-family: 'Bebas Neue', sans-serif; text-align: center;">Privacy Policy</h2>
+            <h3 style="font-family: 'Ubuntu', sans-serif;">Introduction</h3>
+            <p>Welcome to Xenochrome Technologies. Your privacy is paramount to us, and we are committed to protecting your personal data. This privacy policy explains how we handle your personal information in accordance with Malaysia law when you visit our website and informs you of your privacy rights.</p>
+            <h3 style="font-family: 'Ubuntu', sans-serif;">Important Information and Who We Are</h3>
+            <p>Xenochrome Technologies operates in accordance with Malaysia’s data protection regulations. We are the controller and are responsible for your personal data.</p>
+            <h3 style="font-family: 'Ubuntu', sans-serif;">The Data We Collect About You</h3>
+            <p>The categories of personal data that we collect may include, but are not limited to, Identity Data, Contact Data, Financial Data, Transaction Data, and Technical Data.</p>
+            <h3 style="font-family: 'Ubuntu', sans-serif;">How Is Your Personal Data Collected?</h3>
+            <p>Data is collected through direct interactions with our website and services, as well as through automated technologies that record your interactions with our website.</p>
+            <h3 style="font-family: 'Ubuntu', sans-serif;">How We Use Your Personal Data</h3>
+            <p>We comply with Malaysia data protection laws and use your personal data only where it is lawful to do so. This may include fulfilling contracts, pursuing legitimate interests, or complying with legal obligations.</p>
+            <h3 style="font-family: 'Ubuntu', sans-serif;">Data Security</h3>
+            <p>In compliance with Malaysia law, we have implemented strong security measures to protect your data from unauthorized access, alteration, or disclosure.</p>
+            <h3 style="font-family: 'Ubuntu', sans-serif;">Data Retention</h3>
+            <p>We retain personal data for as long as necessary to fulfill the purposes outlined in this policy, in line with the legal requirements and regulations of Malaysia.</p>
+            <h3 style="font-family: 'Ubuntu', sans-serif;">Your Legal Rights</h3>
+            <p>You have specific rights regarding your personal data under Malaysia law, including the right to access, correct, or request the deletion of your personal data.</p>
+            <h3 style="font-family: 'Ubuntu', sans-serif;">International Transfers</h3>
+            <p>We comply with Malaysia regulations regarding the international transfer of personal data, ensuring that your data is protected in accordance with Malaysia law when transferred across borders.</p>
+            <h3 style="font-family: 'Ubuntu', sans-serif;">Third-Party Links</h3>
+            <p>Our website may link to external sites that are not operated by us. We have no control over and assume no responsibility for the content or privacy practices of any third-party sites.</p>
+            <h3 style="font-family: 'Ubuntu', sans-serif;">Contact Details</h3>
+            <p>If you have any questions about this privacy policy or our privacy practices, please contact us in the following ways:
+                <br><br>
+                Email address: <span style="color: white;">info@xenochrome.tech</span><br>
+                Postal address: <span style="color: white;">Kuala Lumpur, Malaysia</span></p>
+            <h3 style="font-family: 'Ubuntu', sans-serif;">Changes to the Privacy Policy</h3>
+            <p>We reserve the right to update this policy at any time. Changes will be posted on this page with an updated revision date.</p>
         
-            <div class="text-center">
-                <img src="XENOCHROME-NOBG-01.png" alt="Xenochrome Logo" class="logo-img" id="logo-img">
-            </div>
-            <h2 style="margin-top: 50px; margin-bottom: 50px; font-family: 'Bebas Neue', sans-serif; font-weight: bold;">At Xenochrome Technologies, we understand that every project is unique, and we tailor our solutions to meet your specific needs and budget requirements.</h2>
-            <h3 style="font-family: 'Ubuntu', sans-serif;">Pricing Model</h3>
-            <p>Instead of adhering to a fixed-price model, we offer customized pricing based on the scope and complexity of each project. This allows us to provide transparent and fair pricing that reflects the value you'll receive from our services.</p>
-            <h3 style="font-family: 'Ubuntu', sans-serif;">Why Custom Pricing?</h3>
-            <p>We believe that every business deserves personalized attention and solutions that are designed to address their individual challenges and goals. By offering custom pricing, we can ensure that you only pay for the services you need and that our solutions deliver maximum value for your investment.</p>
-            <h3 style="font-family: 'Ubuntu', sans-serif;">Get in Touch</h3>
-            <p>Ready to take the next step? Contact us today to discuss your project and receive a personalized quote tailored to your requirements. Our team of experts is here to answer any questions you may have and provide guidance on how we can help you achieve your business objectives.</p>
-            <div style="margin-top: 50px; margin-bottom: 100px;">
-                <a href="contact.html" class="cta-button">Contact Us</a>
-            </div>
-        
+        </div>
     </section>
 </div>
     <footer>
@@ -221,7 +245,7 @@ body p{
             <div class="row">
                 <div class="col-md-4 footer-section">
                     <img src="XENOCHROME-NOBG-TEXT.png" alt="Xenochrome Technologies" class="footer-logo" style="size: 100%; margin-bottom: 30px;">
-                    <p>At Xenochrome Technologies, we specialize in AI automation solutions, optimizing and simplifying major operational workflows.</p>
+                    <p style="color: white;">At Xenochrome Technologies, we specialize in AI automation solutions, optimizing and simplifying major operational workflows.</p>
                 </div>
                 <div class="col-md-4 footer-section">
                     <h3>Links</h3>
@@ -233,7 +257,7 @@ body p{
                 </div>
                 <div class="col-md-4 footer-section">
                     <h3>Contact</h3>
-                    <p>info@xenochrometech.com<br>+6018-2548567</p>
+                    <p style="color: white;">info@xenochrome.tech<br>+6018-2548567</p>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-facebook-f"></i></a>

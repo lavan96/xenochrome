@@ -17,6 +17,7 @@
             font-family: 'Ubuntu', sans-serif;
             color: #ff0000;
             font-size: 50px;
+            text-align: center;
         }
 
         h3 {
@@ -26,7 +27,7 @@
         body {
             font-family: 'Roboto Condensed', sans-serif;
             color: white;
-            text-align: center;
+            text-align: left;
         }
         header {
             background-image: url('red-dark-abstract-art.jpg');
@@ -174,6 +175,7 @@
 }
 
 
+
 @media screen and (min-width: 769px) {
 
 .web {
@@ -299,7 +301,7 @@ h3 {
     <main class="container">
         <section id="about" class="mb-5">
             <h1 class="mb-4" style="margin-top: 100px;">Empower Your Business With Us</h1>
-            <p style="margin-bottom: 100px;">Experience a seamless workflow automation that guarantees increased productivity and cost effectiveness.</p>
+            <p style="margin-bottom: 100px; text-align: center;">Experience a seamless workflow automation that guarantees increased productivity and cost effectiveness.</p>
             
             <div class="row mobile">
                 <div class="col-md-6 mb-4">
@@ -467,7 +469,7 @@ h3 {
         <section id="testimonials" class="mb-5">
             
             <h1 class="mb-4" style="margin-top: 150px;">Our Partners' Success Stories</h1>
-            <p style="font-family: 'Roboto', sans-serif; font-size: 14px; color: white; margin-bottom: 50px;">Read how Xenochrome Technologies has transformed businesses with automated workflows and effective operation management.</p>
+            <p style="font-family: 'Roboto', sans-serif; font-size: 14px; color: white; margin-bottom: 50px; text-align: center;">Read how Xenochrome Technologies has transformed businesses with automated workflows and effective operation management.</p>
             <div class="container">
                 <section id="testimonials" class="mb-5">
                     <div class="row">
@@ -542,5 +544,18 @@ h3 {
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '6650aecfbf0df4036863c791' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+      </script>
 </body>
 </html>

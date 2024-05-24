@@ -14,10 +14,14 @@
             font-family: 'Roboto', sans-serif;
             background-color: #000;
             color: white;
-            text-align: justify;
+            text-align: left;
         }
         h1, h2, h3 {
             font-family: 'Poppins', sans-serif;
+        }
+
+        p{
+            text-align: justify;
         }
         .header {
             background-color: #000;
@@ -222,5 +226,18 @@ h1{
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '6650aecfbf0df4036863c791' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+      </script>
 </body>
 </html>

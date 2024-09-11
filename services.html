@@ -3,153 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Xenochrome Technologies</title>
-    <meta name="description" content="Explore the comprehensive AI-driven automation services offered by Xenochrome Technologies. Tailored solutions to elevate your business efficiency and growth.">
-    <meta name="keywords" content="Services, AI automation, Xenochrome Technologies, business solutions, custom chatbots, data management">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Ubuntu:wght@700&family=Manrope:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Bartini Bartending</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&family=Anton+SC&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css" integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.css" integrity="sha512-bWYN2AWIkJL+UdLBJRvqGm6FMPJ7b6rMRNjlhpmZcUyV+in5Gr2ZPytvNC+RU0LO/vH1seIze1ZueA7SLE7eqw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
+            background-color: #000000;
+            color: white; /* Off-white */
             font-family: 'Roboto', sans-serif;
-            background-color: #000;
-            color: white;
-            text-align: left;
         }
-        h1{
-            font-family: 'Ubuntu', sans-serif;
-            font-size: 60px;
-        }
-        h2, h3 {
-            font-family: 'Poppins', sans-serif;
-        }
-        .header {
-            background-color: #000;
-            text-align: center;
-            padding: 50px 20px;
-        }
-        .header-content {
-            max-width: 800px;
-            margin: auto;
-            justify-content: center;
-        }
-        .header img {
-            max-width: 220px;
-        }
-        .navbar-dark .navbar-nav .nav-link {
-            color: white;
-            text-transform: uppercase;
-        }
-        .card {
-            background-color: #000;
-            border: 2px solid;
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-            margin: 20px 0;
+
+        #bg{
+            background-image: url(bartini-red-bg.png);
+            background-repeat: no-repeat;
+            
+            background-attachment: fixed;
+            max-height: 100%;
             
         }
-        .card-red {
-            border-color: red;
+
+        .navbar, .footer {
+            background-color: #000000;
+            padding-top: 1em;
+            padding-bottom: 1em;
         }
-        .card-purple {
-            border-color: #bd10e0ff;
-        }
-        .card-orange {
-            border-color: #ff6800ff;
-        }
-        .card-green {
-            border-color: #31a905ff;
-        }
-        .card-cyan {
-            border-color: #50e3c2ff;
-        }
-        .card-yellow {
-            border-color: #f8e71cff;
-        }
-        .card-pink {
-            border-color: #ff0099ff;
-        }
-        .card img {
-            max-width: 80%;
-            height: auto;
-            align-self: center;
-        }
-        .card .btn {
-            border: 1px solid;
-            border-radius: 50px;
-            padding: 10px 20px;
-            margin-bottom: 20px;
-            margin-top: 20px;
-            font-family: 'Manrope', sans-serif;
+
+        .navbar-brand, .nav-link {
+            
+            color: white !important; /* Off-white */
+            font-family: 'Silver Medal', sans-serif;
+            font-weight: 100;
             text-transform: uppercase;
+            font-size: 0.8em;
+        }
+
+        .nav-link:hover {
+            color: #ff0000 !important; /* Gold */
+        }
+
+        .btn-primary {
+            
+            background-color: white; /* Off-white */
+            color: #000000;
+            border-color: white;
+            border-radius: 10px;
+            font-family: 'Ubuntu', sans-serif;
             font-weight: 600;
-            min-width: 50%;
-            margin-left: auto;
-            margin-right: auto;
         }
-        .btn-red {
-            color: red;
-            border-color: red;
+
+        .btn-primary:hover {
+            background-color: #ff0000; /* Gold */
+            border-color: #ff0000;
+            color: white;
+            border-radius: 10px;
+            font-family: 'Ubuntu', sans-serif;
         }
-        .btn-red:hover{
-            color: #000;
-            background-color: red;
+
+        h1, h2, h5, p, .card-title, .card-text {
+            color: white; /* Off-white */
         }
-        .btn-purple {
-            color: #bd10e0ff;
-            border-color: #bd10e0ff;
+
+        h1{
+            font-family: 'Silver Medal', sans-serif;
+            text-transform: uppercase;
+            font-size: 3rem;
         }
-        .btn-purple:hover{
-            color: #000;
-            background-color: #bd10e0ff;
+
+        h2 {
+            font-family: 'Silver Medal', sans-serif;
+            text-transform: uppercase;
+            font-size: 2rem;
         }
-        .btn-orange {
-            color: #ff6800ff;
-            border-color: #ff6800ff;
+
+        h5 {
+            font-family: 'Great Vibes', cursive;
+            margin-top: 1em;
+            font-size: 3em;
+            margin-bottom: 1em;
         }
-        .btn-orange:hover{
-            color: #000;
-            background-color: #ff6800ff;
+
+        .card {
+            background-color: transparent;
+            border: 0px solid #ffd700; /* Gold */
+            border-radius: 0px;
         }
-        .btn-green {
-            color: #31a905ff;
-            border-color: #31a905ff;
+
+        .card-title {
+            color: white;
         }
-        .btn-green:hover{
-            color: #000;
-            background-color: #31a905ff;
+
+        .card-body {
+            color: white; /* Off-white */
         }
-        .btn-cyan {
-            color: #50e3c2ff;
-            border-color: #50e3c2ff;
+
+        .footer {
+            color: white;
         }
-        .btn-cyan:hover{
-            color: #000;
-            background-color: #50e3c2ff;
-        }
-        .btn-yellow {
-            color: #f8e71cff;
-            border-color: #f8e71cff;
-        }
-        .btn-yellow:hover{
-            color: #000;
-            background-color: #f8e71cff;
-        }
-        .btn-pink {
-            color: #ff0099ff;
-            border-color: #ff0099ff;
-        }
-        .btn-pink:hover{
-            color: #000;
-            background-color: #ff0099ff;
-        }
-        footer {
-    background-color: #000;
-    color: white;
-    padding: 50px 0;
-}
-.footer-logo {
+
+        .footer-logo {
     max-width: 200px;
 }
 .footer-section {
@@ -169,226 +122,893 @@
     color: #ff0000;
 }
 .social-icons a {
-    color: #ff0000;
+    color: white;
     font-size: 24px;
     margin-right: 15px;
 }
 .social-icons a:hover {
-    color: white;
+    color: #ff0000;
 }
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    border-top: 1px solid #333;
-    padding-top: 10px;
-}
-.header .header-logo {
-            max-width: 220px;
-            
+
+        .form-control, .form-label {
+            background-color: #000000;
+            color: #f0e68c;
+            border: 1px solid #ffd700; /* Gold */
         }
-.logo-img{
 
-min-width: 400px;    
-} 
+        .form-control:focus {
+            background-color: #000000;
+            color: #ffd700; /* Gold */
+            border: 1px solid #f0e68c; /* Off-white */
+            box-shadow: none;
+        }
 
-.navbar a:hover{
-    color: red;
+        @font-face {
+    font-family: 'Silver Medal';
+    src: url('Silver Medal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.navbar a{
-    color: white;
-    font-family: 'Roboto Condensed', sans-serif;
-    text-transform: uppercase;
+@font-face {
+    font-family: 'Custom2';
+    src: url('all_things_must_pass/All Things Must Pass.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-#xo p {
-    font-size: 20px;
-   }
+        @media screen and (max-width: 768px) {
+            #web{
+                display:none;
 
-@media screen and (max-width: 768px) {
-   
- 
-   nav{
-   
-       text-align: right;
-       text-transform: uppercase;
-       font-weight: 900;
-       font-size: 1.2em;
-       color: #ffffffff;
-       
-   }
-   .navbar-nav{
-      
-       padding: 1em;
-       margin-top: 1em;
-       margin-bottom: 1em;
-   }
-   
-   .navbar a:hover{
-    color: red;
+            }
+
+            #mobile{
+                display: block;
+            }
+
+            .web{
+                display:none;
+
+            }
+
+            .mobile{
+                display: block;
+            }
+
+            .navbar-nav{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: right;
 }
-   
-   #header-logo{
-       max-width: 7em;
-   }
+        }
+        @media screen and (min-width: 769px) {
+            #web{
+                display:block;
 
-   .header-content img {
-       min-width: 100%;
-       margin-top: 5em;
-   }
+            }
 
-   .pricing-section img{
-    max-width: 100%;
-    margin-bottom: 3em;
-   }
-   #xo {
-    padding: 2em;
-   }
+            #mobile{
+                display: none;
+            }
 
-   #xo p {
-    font-size: 1em;
-   }
-   h1{
-    font-size: 2em;
-    margin-bottom: 0.5em;
-   }
-  
-   }
+            .web{
+                display:block;
+
+            }
+
+            .mobile{
+                display: none;
+            }
+
+            h1, h2{
+                font-size: 4em;
+            }
+        }
     </style>
 </head>
 <body>
-    <header class="header">
-        <div class="container"><nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">
-                <img src="XENOCHROME-NOBG-TEXT.png" alt="Xenochrome Technologies" class="header-logo" id="header-logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgba(0, 0, 0, 0.4); border-color: #FF0000;">
-                <span class="navbar-toggler-icon" style="align-content: center;"><i class="fa-solid fa-bars" style="color: #FF0000;"></i></span>
+<div class="container">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bartini Bartending</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgba(0, 0, 0, 0.4); border-color: #FF0000;">
+                <span class="navbar-toggler-icon" style="align-content: center;"> <i class="fa-solid fa-bars" style="color: #FF0000;"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto" style="font-family: 'Roboto Condensed', sans-serif;">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="get-a-quote.html">Get a Quote</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+</div>
+    <!-- Home Section -->
+    <section id="web" class="web" class="" style="background-image: url(hero.png); height: 90vh; background-blend-mode: darken; background-size: cover; align-content: center; text-align: right;">
+        <div class="container" style="align-items:flex-end;">
+            <h1 class="display-4" style="">Services <br><span style="color: #ff0000; font-size: 3rem;">To Make <br>your night <br>Memorable</span></h1><br>
+            <p class="lead" style="font-family: 'Great Vibes', cursive; font-size: 2.5em;">Beverage Catering for all Events</p><br>
+            <a href="#services" class="btn btn-primary">Learn More</a>
+        </div>
+    </section>
+    <section  id="mobile" class="text-center" style="background-image: url(hero.png); height: 90vh; background-blend-mode: darken; background-size: cover; align-content: center; text-align: right;">
+        <div class="container" style="align-items:flex-end; background-color: #000000a9; padding: 3em;">
+            <h1 class="display-4" style="">Services <br><span style="color: #ff0000; font-size: 2rem;">To make your night memorable</span></h1>
+            <p class="lead" style="font-family: 'Great Vibes', cursive; font-size: 2em;">Beverage Catering for all Events</p><br>
+            <a href="#services" class="btn btn-primary">Learn More</a>
+        </div>
+    </section>
+</section>
+
+<div id="bg">
+    <!-- Services Section -->
+    <section id="services" class="p-5">
+        <h2 class="text-center mb-4 mobile" style="padding-bottom: 0.3em;">Portable <br><span style="color: #ff0000;">Bar</span></h2>
+        <h3 class="text-center mb-4 mobile" style="font-family: 'Silver Medal', sans-serif; text-transform: uppercase;">Bring a Bar Experience to Your Event</h3>
+        <p class="text-center mb-4 mobile" >Want to enhance your event with a bar? Our portable bar is the perfect solution. Equipped with everything you need and staffed by professionals, it transforms any venue into an energetic social hub!
+        </p>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade mobile" data-bs-ride="carousel" style="" id="mobile">
+            <div class="carousel-inner">
+              <div class="carousel-item active" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+                <div class="card">
+                    <div class="card-body text-center">
+                        
+                        <img src="portable-bar-5.webp" alt="" style="max-width: 100%;">
+                        
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <img src="portable-bar-2.webp" alt="" style="max-width: 100%;">
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <img src="portable-bar-3.webp" alt="" style="max-width: 100%;">
+                    </div>
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+
+        <div class="container web" style="padding-top: 80px;">
+            <h2 class="text-center mb-4" style=" padding-bottom: 0.3em; font-size: 4rem;">Portable <br><span style="color: #ff0000;">Bar</span></h2>
+            <h3 class="text-center mb-4" style="font-family: 'Silver Medal', sans-serif; text-transform: uppercase;">Bring a Bar Experience to Your Event</h3>
+        <p class="text-center mb-4" style="padding-left: 10em; padding-right: 10em;">Want to enhance your event with a bar? Our portable bar is the perfect solution. Equipped with everything you need and staffed by professionals, it transforms any venue into an energetic social hub!
+            </p>
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="portable-bar-5.webp" alt="" style="max-width: 100%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="portable-bar-2.webp" alt="" style="max-width: 100%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="portable-bar-3.webp" alt="" style="max-width: 100%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="p-5">
+    <h2 class="text-center mb-4 mobile" style="padding-bottom: 0.3em;">Bar<span style="color: #ff0000;">tenders</span></h2>
+    <h3 class="text-center mb-4 mobile" style="font-family: 'Silver Medal', sans-serif; text-transform: uppercase;">Craftsmanship in Every Sip</h3>
+    <p class="text-center mb-4 mobile" >At Bartini, we pride ourselves on offering exceptional bartending services that elevate your event and make it memorable for your guests. Our professional bartenders are experienced, efficient, and committed to providing top-notch service. As industry professionals with years of experience, we understand the intricacies of event bartending. Our team is trained to handle any situation with grace and efficiency, ensuring your event runs smoothly from start to finish
+    </p>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade mobile" data-bs-ride="carousel" style="" id="mobile">
+        <div class="carousel-inner">
+          
+          <div class="carousel-item active" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="bartender-2.webp" alt="" style="max-width: 100%;">
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="bartender-1.webp" alt="" style="max-width: 100%;">
+                </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+
+    <div class="container web" style="padding-top: 80px;">
+        <h2 class="text-center mb-4" style=" padding-bottom: 0.3em; font-size: 4rem;">Bar<span style="color: #ff0000;">tenders</span></h2>
+        <h3 class="text-center mb-4" style="font-family: 'Silver Medal', sans-serif; text-transform: uppercase;">Craftsmanship in Every Sip</h3>
+    <p class="text-center mb-4" style="padding-left: 10em; padding-right: 10em;">At Bartini, we pride ourselves on offering exceptional bartending services that elevate your event and make it memorable for your guests. Our professional bartenders are experienced, efficient, and committed to providing top-notch service. As industry professionals with years of experience, we understand the intricacies of event bartending. Our team is trained to handle any situation with grace and efficiency, ensuring your event runs smoothly from start to finish
+        </p>
+        <div class="row text-center g-4">
+            <div class="col-md-2">
+                
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="bartender-2.webp" alt="" style="max-width: 100%;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="bartender-1.webp" alt="" style="max-width: 100%;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                
+            </div>
+        </div>
+        
     </div>
-    </header>
-    <div class="header-content" style="text-align: center;">
-        <img src="XENOCHROME-NOBG-01.png" alt="Xenochrome Technologies" class="img-fluid mb-5" style="width:60%;">
+</section>
+
+<!-- Services Section -->
+<section id="services" class="p-5">
+    <h2 class="text-center mb-4 mobile" style="padding-bottom: 0.3em;">Cocktails <br><span style="color: #ff0000;">& Mocktails</span></h2>
+    <h3 class="text-center mb-4 mobile" style="font-family: 'Silver Medal', sans-serif; text-transform: uppercase;">Customised Cocktails Designed Specifically for your event</h3>
+    <p class="text-center mb-4 mobile" >Dive into a world where every sip is an experience, every drink tells a story. At Bartini, we believe in elevating the art of mixology to mesmerizing heights. From the smoky allure of our enhancements to the playful nostalgia of tipsy snow cones, we craft moments that
+        linger, turning ordinary gatherings into unforgettable celebrations</p>
+    <p class="text-center mb-4 mobile" >Welcome to our exclusive Signature Cocktail Menu, where every drink is a masterpiece waiting to be savored. Discover a selection of unique and delicious concoctions, meticulously crafted to tantalize your taste buds and elevate your event to new heights of sophistication</p>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade mobile" data-bs-ride="carousel" style="" id="mobile">
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+            <div class="card">
+                <div class="card-body text-center">
+                    
+                    <img src="whiskey-sour.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4 mobile" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #ff0000; padding-top: 2em; font-size: 1.2em;">Whiskey <br><br>Sour</h3>
+                    <ul class="card-text" style="text-align: left;">
+                        <li>1⅔ PARTS BOURBON</li>
+                        <li>3 DASHES ANGOSTURA BITTERS</li>
+                        <li>1 EGG WHITE</li>
+                        <li>PART ICE CUBES</li>
+                        <li>1 SPIRAL LEMON</li>
+                        <li>⅚ PARTS LEMON JUICE</li>
+                        <li>½ PARTS SIMPLE </li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="old-fashioned-cocktail.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4 mobile" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #ff6f00; padding-top: 2em; font-size: 1.2em;">Old <br><br>Fashioned</h3>
+                    <ul class="card-text" style="text-align: left;">
+                        <li>60 ML SESAME INFUSED JAMESON</li>
+                        <li>20 ML SOY CARAMEL (5:2 CARAMEL AND LIGHT SOY SAUCE)</li>
+                        <li>1 DASH ORANGE BITTERS</li>
+                        <li>1 DASH ANGOSTURA (AROMATIC) BITTERS</li>
+                        <li>GARNISH WITH SESAME</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="southside-cocktail.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4 mobile" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #9dff00; padding-top: 2em; font-size: 1.2em;">Southside</h3>
+                    <ul class="card-text" style="text-align: left;">
+                        <li>2 OUNCES (1/4 CUP) SPICED GIN, LIKE BOMBAY
+                            SAPPHIRE</li>
+                        <li>6 FRESH MINT LEAVES, PLUS MORE FOR SERVING</li>
+                        <li>3/4 OUNCE (1 1/2 TABLESPOONS) SIMPLE SYRUP/li>
+                        <li>3/4 OUNCE (1 1/2 TABLESPOONS) FRESH LIME JUICE</li>
+                        <li>3 DROPS ANGOSTURA COCKTAIL BITTERS</li>
+                        <li>ICE</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="bramble-cocktail.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4 mobile" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #d80082; padding-top: 2em; font-size: 1.2em;">Bramble</h3>
+                    <ul class="card-text" style="text-align: left;">
+                        <li>2 OUNCES GIN</li>
+                        <li>1 OUNCE LEMON JUICE, FRESHLY
+                            SQUEEZED</li>
+                        <li>2 TEASPOONS SIMPLE SYRUP</li>
+                        <li>1/2 OUNCE CREME DE MURE</li>
+                        <li>GARNISH: LEMON HALF-WHEEL</li>
+                        <li>GARNISH: FRESH</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="bloody-mary-cocktail.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4 mobile" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #ff1500; padding-top: 2em; font-size: 1.2em;">Bloody <br><br>Mary</h3>
+                    <ul class="card-text" style="text-align: left;">
+                        <li>CELERY SALT</li>
+                        <li>1 LEMON WEDGE</li>
+                        <li>1 LIME WEDGE</li>
+                        <li>2 OUNCES VODKA</li>
+                        <li>4 OUNCES TOMATO JUICE</li>
+                        <li>2 TEASPOONS PREPARED HORSERADISH</li>
+                        <li>2 DASHES TABASCO SAUCE</li>
+                        <li>2 DASHES WORCESTERSHIRE SAUCE</li>
+                        <li>1 PINCH GROUND BLACK PEPPER</li>
+                        <li>1 PINCH SMOKED PAPRIKA </li>
+                        <li>GARNISH: PARSLEY SPRIG</li>
+                        <li>GARNISH: 2 GREEN OLIVES </li>
+                        <li>GARNISH: LIME WEDGE</li>
+                        <li>GARNISH: CELERY STALK (OPTIONAL)</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    <div class="container web" style="padding-top: 80px;">
+        <h2 class="text-center mb-4" style="padding-bottom: 0.3em;">Cocktails <br><span style="color: #ff0000;">& Mocktails</span></h2>
+    <h3 class="text-center mb-4" style="font-family: 'Silver Medal', sans-serif; text-transform: uppercase;">Customised Cocktails Designed Specifically for your event</h3>
+    <p class="text-center mb-4" style="padding-left: 10em; padding-right: 10em;">Dive into a world where every sip is an experience, every drink tells a story. At Bartini, we believe in elevating the art of mixology to mesmerizing heights. From the smoky allure of our enhancements to the playful nostalgia of tipsy snow cones, we craft moments that
+        linger, turning ordinary gatherings into unforgettable celebrations</p>
+    <p class="text-center mb-4 " style="padding-left: 10em; padding-right: 10em;">Welcome to our exclusive Signature Cocktail Menu, where every drink is a masterpiece waiting to be savored. Discover a selection of unique and delicious concoctions, meticulously crafted to tantalize your taste buds and elevate your event to new heights of sophistication</p>
+    
+        
+        <div class="row text-center g-4" style="padding-top: 2em;">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="whiskey-sour.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #ffd700; padding-top: 2em;">Whiskey Sour</h3>
+                    <ul class="card-text" style="text-align: left;">
+                        <li>1⅔ PARTS BOURBON</li>
+                        <li>3 DASHES ANGOSTURA BITTERS</li>
+                        <li>1 EGG WHITE</li>
+                        <li>PART ICE CUBES</li>
+                        <li>1 SPIRAL LEMON</li>
+                        <li>⅚ PARTS LEMON JUICE</li>
+                        <li>½ PARTS SIMPLE </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="old-fashioned-cocktail.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #ff6f00; padding-top: 2em;">Old Fashioned</h3>
+                    <ul class="card-text" style="text-align: left;">
+                        <li>60 ML SESAME INFUSED JAMESON</li>
+                        <li>20 ML SOY CARAMEL (5:2 CARAMEL AND LIGHT SOY SAUCE)</li>
+                        <li>1 DASH ORANGE BITTERS</li>
+                        <li>1 DASH ANGOSTURA (AROMATIC) BITTERS</li>
+                        <li>GARNISH WITH SESAME</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="southside-cocktail.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #9dff00; padding-top: 2em;">Southside</h3>
+                    <ul class="card-text" style="text-align: left;">
+                        <li>2 OUNCES (1/4 CUP) SPICED GIN, LIKE BOMBAY
+                            SAPPHIRE</li>
+                        <li>6 FRESH MINT LEAVES, PLUS MORE FOR SERVING</li>
+                        <li>3/4 OUNCE (1 1/2 TABLESPOONS) SIMPLE SYRUP/li>
+                        <li>3/4 OUNCE (1 1/2 TABLESPOONS) FRESH LIME JUICE</li>
+                        <li>3 DROPS ANGOSTURA COCKTAIL BITTERS</li>
+                        <li>ICE</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center g-4" style="padding-top: 2em;">
+            <div class="col-md-2">
+                
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="bramble-cocktail.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #d80082; padding-top: 2em;">Bramble</h3>
+                    <ul class="card-text" style="text-align: left;">
+                        <li>2 OUNCES GIN</li>
+                        <li>1 OUNCE LEMON JUICE, FRESHLY
+                            SQUEEZED</li>
+                        <li>2 TEASPOONS SIMPLE SYRUP</li>
+                        <li>1/2 OUNCE CREME DE MURE</li>
+                        <li>GARNISH: LEMON HALF-WHEEL</li>
+                        <li>GARNISH: FRESH</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="bloody-mary-cocktail.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #ff1500; padding-top: 2em;">Bloody Mary</h3>
+                    <ul class="card-text" style="text-align: left;">
+                        <li>CELERY SALT</li>
+                        <li>1 LEMON WEDGE</li>
+                        <li>1 LIME WEDGE</li>
+                        <li>2 OUNCES VODKA</li>
+                        <li>4 OUNCES TOMATO JUICE</li>
+                        <li>2 TEASPOONS PREPARED HORSERADISH</li>
+                        <li>2 DASHES TABASCO SAUCE</li>
+                        <li>2 DASHES WORCESTERSHIRE SAUCE</li>
+                        <li>1 PINCH GROUND BLACK PEPPER</li>
+                        <li>1 PINCH SMOKED PAPRIKA </li>
+                        <li>GARNISH: PARSLEY SPRIG</li>
+                        <li>GARNISH: 2 GREEN OLIVES </li>
+                        <li>GARNISH: LIME WEDGE</li>
+                        <li>GARNISH: CELERY STALK (OPTIONAL)</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                
+            </div>
+        </div>
     </div>
-    <div class="container" id="xo" style="text-align: justify;">
-    <h1>Our Services</h1>
-    <p style="color: #ff0000;">Welcome to Xenochrome Technologies, your go-to destination for state-of-the-art AI-driven automation solutions. We take pride in offering a comprehensive suite of services designed to elevate your business, boost efficiency, and drive unparalleled growth. Explore our diverse range of services tailored to meet your unique needs.</p>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="p-5">
+    <h2 class="text-center mb-4 mobile" style="padding-bottom: 0.3em;">Glass<span style="color: #ff0000;">wares</span></h2>
+    <h3 class="text-center mb-4 mobile" style="font-family: 'Silver Medal', sans-serif; text-transform: uppercase;">Why Use Different Types of Glassware?</h3>
+    <p class="text-center mb-4 mobile" >Different glassware has evolved in order to make each different drink better. It may be that you have a perfectly measured cocktail, but the size of the mouth can help release the aromas. It may be that you have a wonderful new liquor in your hand, but once in a
+        drinking vessel it can be warmed-up, or stay cool, by the design of the glass. Enhanced aromas and correct temperatures are two key
+        factors to improving the drinking experience.</p>
+    
+    <div id="carouselExampleFade" class="carousel slide carousel-fade mobile" data-bs-ride="carousel" style="" id="mobile">
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+            <div class="card">
+                <div class="card-body text-center">
+                    
+                    <img src="champagne-glass.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4 mobile" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #ffd700; padding-top: 2em; font-size: 1.2em;">Champagne <br><br>Flutes</h3>
+                    <p>Champagne flutes are a type of tall and slender stemware used for champagne and other varieties of sparkling wine. They are designed to prevent heat from transferring from the hand to the
+                        champagne and also to keep sparkling wine from
+                        going flat</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="coupe-glass.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4 mobile" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #ffd700; padding-top: 2em; font-size: 1.2em;">Coupe <br><br>Glass</h3>
+                    <p>Sometimes used interchangeably with the
+                        champagne saucer, the coupe is a wide- bowled stemmed glass used for craft cocktails</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="highball-glass.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4 mobile" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #ffd700; padding-top: 2em; font-size: 1.2em;">Highball <br><br>Glass</h3>
+                    <p>Highball glasses are tall, narrow glasses. They are taller than a rocks glass and
+                        shorter than a Collins glass, and they’re perfect for serving mixed drinks or spirits on
+                        the rocks</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="margarita-glass.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4 mobile" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #ffd700; padding-top: 2em; font-size: 1.2em;">Margarita <br><br>Glass</h3>
+                    <p>The Martini glass is an iconic cocktail glass, and most home bars house a Martini glass set
+                        to make mixed drinks like Martinis and Manhattans</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="red-wine-glass.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4 mobile" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #ffd700; padding-top: 2em; font-size: 1.2em;">Red Wine <br><br>Glass</h3>
+                    <p>Designed for the bold aroma and flavor of a red wine, standard red wine glasses have a very wide bowl meant to allow the smells of a red wine to waft up towards the drinker’s nose and mouth.</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="rocks-glass.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4 mobile" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #ffd700; padding-top: 2em; font-size: 1.2em;">Rocks Glass</h3>
+                    <p>Rocks glasses can be used for serving
+                        spirits neat or on the rocks as well as cocktails like the Old Fashioned</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    <div class="container web" style="padding-top: 80px;">
+        <h2 class="text-center mb-4" style="padding-bottom: 0.3em;">Glass<span style="color: #ff0000;">wares</span></h2>
+    <h3 class="text-center mb-4" style="font-family: 'Silver Medal', sans-serif; text-transform: uppercase;">Why Use Different Types of Glassware?</h3>
+    <p class="text-center mb-4" style="padding-left: 10em; padding-right: 10em;">Different glassware has evolved in order to make each different drink better. It may be that you have a perfectly measured cocktail, but the size of the mouth can help release the aromas. It may be that you have a wonderful new liquor in your hand, but once in a
+        drinking vessel it can be warmed-up, or stay cool, by the design of the glass. Enhanced aromas and correct temperatures are two key
+        factors to improving the drinking experience.
+        </p>
+    
+        <div class="row text-center g-4" style="padding-top: 2em;">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="champagne-glass.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #ff0000; padding-top: 2em; font-size: 1.2em;">Champagne Flutes</h3>
+                    <p>Champagne flutes are a type of tall and slender stemware used for champagne and other varieties of sparkling wine. They are designed to prevent heat from transferring from the hand to the
+                        champagne and also to keep sparkling wine from
+                        going flat</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="coupe-glass.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #ff0000; padding-top: 2em; font-size: 1.2em;">Coupe Glass</h3>
+                    <p>Sometimes used interchangeably with the
+                        champagne saucer, the coupe is a wide- bowled stemmed glass used for craft cocktails</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="highball-glass.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #ff0000; padding-top: 2em; font-size: 1.2em;">Highball Glass</h3>
+                    <p>Highball glasses are tall, narrow glasses. They are taller than a rocks glass and
+                        shorter than a Collins glass, and they’re perfect for serving mixed drinks or spirits on
+                        the rocks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center g-4" style="padding-top: 2em;">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="margarita-glass.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #ff0000; padding-top: 2em; font-size: 1.2em;">Margarita Glass</h3>
+                    <p>The Martini glass is an iconic cocktail glass, and most home bars house a Martini glass set
+                        to make mixed drinks like Martinis and Manhattans</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="red-wine-glass.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #ff0000; padding-top: 2em; font-size: 1.2em;">Red Wine Glass</h3>
+                    <p>Designed for the bold aroma and flavor of a red wine, standard red wine glasses have a very wide bowl meant to allow the smells of a red wine to waft up towards the drinker’s nose and mouth.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="rocks-glass.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #ff0000; padding-top: 2em; font-size: 1.2em;">Rocks Glass</h3>
+                    <p>Rocks glasses can be used for serving
+                        spirits neat or on the rocks as well as cocktails like the Old Fashioned</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="container" id="xo" style="margin-top: 50px;">
+</section>
+
+<!-- Services Section -->
+<section id="services" class="p-5">
+    <h2 class="text-center mb-4 mobile" style="padding-bottom: 0.3em;">Flavour <span style="color: #ff0000;">Blaster</span></h2>
+    
+    
+    <div id="carouselExampleFade" class="carousel slide carousel-fade mobile" data-bs-ride="carousel" style="" id="mobile">
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+            <div class="card">
+                <div class="card-body text-center">
+                    
+                    <img src="flavor-blaster.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4 mobile" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #ff0000; padding-top: 2em; font-size: 1.2em;">Bubble <br><br>Mixture</h3>
+                    <p>We garnish your cocktails with a beatifully balanced burstable that give your guest a
+                        sensational service </p>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="flavor-blaster-3.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4 mobile" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #ff0000; padding-top: 2em; font-size: 1.2em;">Aromas</h3>
+                    <p>Discover our delicious vegan aromas, crafted in a
+                        certified allergen-free environment. It specifically designed for your cocktails. It range includes sweet and fruity, herbal and oaky aromas, perfectly complementing your drink creations. There's a neutral option for pure, scent-free smoke </p>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    <div class="container web" style="padding-top: 80px;">
+        <h2 class="text-center mb-4" style="padding-bottom: 0.3em;">Flavour <span style="color: #ff0000;">Blaster</span></h2>
+    
+    
+        <div class="row text-center g-4" style="padding-top: 2em;">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="flavor-blaster.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #ff0000; padding-top: 2em; font-size: 1.2em;">Bubble Mixture</h3>
+                    <p>We garnish your cocktails with a beatifully balanced burstable that give your guest a
+                        sensational service </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="flavor-blaster-3.webp" alt="" style="max-width: 100%;">
+                    <h3 class="text-center mb-4" style="font-family: 'Custom2', sans-serif; text-transform: uppercase; color: #ff0000; padding-top: 2em; font-size: 1.2em;">Aromas</h3>
+                    <p>Discover our delicious vegan aromas, crafted in a
+                        certified allergen-free environment. It specifically designed for your cocktails. It range includes sweet and fruity, herbal and oaky aromas, perfectly complementing your drink creations. There's a neutral option for pure, scent-free smoke </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="p-5">
+    <h2 class="text-center mb-4 mobile" style="padding-bottom: 0.3em;">Magical <span style="color: #ff0000;">Printpen</span></h2>
+    <h3 class="text-center mb-4 mobile" style="font-family: 'Silver Medal', sans-serif; text-transform: uppercase;">WE WILL HELP YOU ADD PERSONALISED EMBELLISHMENTS TO YOUR DRINKS CREATIONS</h3>
+    <p class="text-center mb-4 mobile" >We help you easily print logos and images onto a variety of drinks, making if easy to complete your event
+    </p>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade mobile" data-bs-ride="carousel" style="" id="mobile">
+        <div class="carousel-inner">
+          
+          <div class="carousel-item active" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="magic-printpen.webp" alt="" style="max-width: 100%;">
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="max-width: 100%; align-content: center; text-align: center;" data-bs-interval="2000">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="magic-printpen-2.webp" alt="" style="max-width: 100%;">
+                </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+
+    <div class="container web" style="padding-top: 80px;">
+        <h2 class="text-center mb-4" style=" padding-bottom: 0.3em; font-size: 4rem;">Magical <span style="color: #ff0000;">Printpen</span></h2>
+        <h3 class="text-center mb-4" style="font-family: 'Silver Medal', sans-serif; text-transform: uppercase;">WE WILL HELP YOU ADD PERSONALISED EMBELLISHMENTS TO YOUR DRINKS CREATIONS</h3>
+    <p class="text-center mb-4" style="padding-left: 10em; padding-right: 10em;">We help you easily print logos and images onto a variety of drinks, making if easy to complete your event
+        </p>
+        <div class="row text-center g-4">
+            <div class="col-md-2">
+                
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="magic-printpen.webp" alt="" style="max-width: 100%;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="magic-printpen-2.webp" alt="" style="max-width: 100%;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<div class="container-fluid" style="padding: 20px;">
+
+
+<!-- About Section -->
+
+<section id="about" class="" style="padding-top: 4em;">
+    <div class="container">
+        <h2 class="text-center mb-4" style="padding-bottom: 0.3em;">Liqueur<br><span style="color: #ff0000;"> Chocolates</span></h2>
+    <p class="text-center mb-4">Our exclusive liqueur chocolates is reserved solely for your events. Your guest will undoubtedly be delighted by its rich flavor derived from renowned liqueur brands.
+    </p>
         <div class="row">
-            <div class="col-md-6">
-                <div class="card card-red">
-                    <h2 style="color: red; font-weight: 700; margin-top: 30px;">CUSTOM CHATBOTS</h2>
-                    <img src="leadgen.png" alt="Custom Chatbots">
-                    <a href="custom-chatbots.html" class="btn btn-red">Learn More</a>
-                </div>
+            <div class="col-md-6" style="align-content: center; padding: 2em;">
+                <img src="Bailey's Chocolate-nobg.png" class="img-fluid" alt="Bartini team" style="max-width: 100%;">
             </div>
-            <div class="col-md-6">
-                <div class="card card-purple">
-                    <h2 style="color: #bd10e0ff; font-weight: 700; margin-top: 30px;">DELPHI by Xenochrome</h2>
-                    <img src="uni-chatbot.png" alt="Delphi by Xenochrome">
-                    <a href="delphi.html" class="btn btn-purple">Learn More</a>
-                </div>
+            <div class="col-md-6" style="padding: 2em; align-content:center;">
+                <h2 style="">Bailey's <span style="color: #ff0000;">Chocolate</span></h2>
+                
+                <br><p style="text-align: justify;">Chocolate Liqueurs Baileys is a delightful collection of chocolate bottles filled with the smooth and creamy flavors of Baileys Irish Cream liqueur. Renowned for their expertise in creating premium chocolates, this collection offers a unique and indulgent taste experience for your guest.
+                </p>
             </div>
+            
         </div>
+    </div>
+</section>
+
+<!-- About Section -->
+
+<section id="about" class="web" style="padding-top: 4em;">
+    <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <div class="card card-orange">
-                    <h2 style="color: #ff6800ff; font-weight: 700; margin-top: 30px;">BACKEND AUTOMATIONS</h2>
-                    <img src="backend.png" alt="Backend Automations">
-                    <a href="backend-automations.html" class="btn btn-orange">Learn More</a>
-                </div>
+            <div class="col-md-6" style="padding: 2em; align-content:center;">
+                <h2 style="">Chocolate <span style="color: #ff0000;">Cocktails</span></h2>
+                
+                <br><p style="text-align: justify;">Experience the indulgent flavours of Chocolate Cocktails. Our chocolate
+                    cocktails, each filled with tantalizing cocktail-inspired flavours. Enjoy the harmonious fusion of premium chocolate with renowned spirit brands, including Mojito, Margarita, Cosmopolitan, Strawberry Daiquiri, Piña Colada, and Caipirinha. Individually wrapped in foil, these chocolate
+                    cocktails exude elegance and sophistication. The taste experience is a must shared moment with your guest as Cocktails promise a truly memorable and delectable.</p>
             </div>
-            <div class="col-md-6">
-                <div class="card card-green">
-                    <h2 style="color: #31a905ff; font-weight: 700; margin-top: 30px;">DATA MANAGEMENT</h2>
-                    <img src="data-management.png" alt="Data Management">
-                    <a href="data-management.html" class="btn btn-green">Learn More</a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card card-cyan">
-                    <h2 style="color: #50e3c2ff; font-weight: 700; margin-top: 30px;">AI PERSONAS</h2>
-                    <img src="ai-persona.png" alt="AI Personas">
-                    <a href="ai-personas.html" class="btn btn-cyan">Learn More</a>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card card-yellow">
-                    <h2 style="color: #f8e71cff; font-weight: 700; margin-top: 30px;">BOTHIVE by Xenochrome</h2>
-                    <img src="bothive.png" alt="BotHive by Xenochrome">
-                    <a href="bothive.html" class="btn btn-yellow">Learn More</a>
-                </div>
-            </div>
-        </div>
-        <div class="row" style="justify-content: center;">
-            <div class="col-md-6">
-                <div class="card card-pink">
-                    <h2 style="color: #ff0099ff; font-weight: 700; margin-top: 30px;">VOICE AGENTS</h2>
-                    <img src="voice-agents.png" alt="Voice Agents">
-                    <a href="voice-agents.html" class="btn btn-pink">Learn More</a>
-                </div>
+            <div class="col-md-6" style="align-content: center; padding: 2em;">
+                <img src="Cocktail chocolates-nobg.png" class="img-fluid" alt="Bartini team" style="max-width: 100%;">
             </div>
         </div>
     </div>
-    <footer>
+</section>
+
+<!-- About Section -->
+
+<section id="about" class="mobile" style="padding-top: 4em;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="align-content: center; padding: 2em;">
+                <img src="Cocktail chocolates-nobg.png" class="img-fluid" alt="Bartini team" style="max-width: 100%;">
+            </div>
+            <div class="col-md-6" style="padding: 2em; align-content:center;">
+                <h2 style="">Chocolate <span style="color: #ff0000;">Cocktails</span></h2>
+                
+                <br><p style="text-align: justify;">Experience the indulgent flavours of Chocolate Cocktails. Our chocolate
+                    cocktails, each filled with tantalizing cocktail-inspired flavours. Enjoy the harmonious fusion of premium chocolate with renowned spirit brands, including Mojito, Margarita, Cosmopolitan, Strawberry Daiquiri, Piña Colada, and Caipirinha. Individually wrapped in foil, these chocolate
+                    cocktails exude elegance and sophistication. The taste experience is a must shared moment with your guest as Cocktails promise a truly memorable and delectable.</p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="" style="padding-top: 4em;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="align-content: center; padding: 2em;">
+                <img src="Coffee Liqueur Chocolates-nobg.png" class="img-fluid" alt="Bartini team" style="max-width: 100%;">
+            </div>
+            <div class="col-md-6" style="padding: 2em; align-content:center;">
+                <h2 style="">Coffee Liqueur <span style="color: #ff0000;">Chocolates</span></h2>
+                <br><p style="text-align: justify;">Experience the indulgent flavours of Chocolate Cocktails. Our chocolate
+                    cocktails, each filled with tantalizing cocktail-inspired flavours. Enjoy the harmonious fusion of premium chocolate with renowned spirit brands, including Mojito, Margarita, Cosmopolitan, Strawberry Daiquiri, Piña Colada, and Caipirinha. Individually wrapped in foil, these chocolate
+                    cocktails exude elegance and sophistication. The taste experience is a must shared moment with your guest as Cocktails promise a truly memorable and delectable.</p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+        
+
+</div>
+
+              
+
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4" style="padding-top: 2em;">Get a <span style="color: #ff0000;">Quote</span></h2>
+            <div class="row">
+                <div class="text-center">
+                    <h5 style="color: white; font-size: 2.3em;">Receive a personalized quote for your event with flexible packages tailored to your needs and budget.</h5>
+                    <p></p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</div>
+    
+
+    <!-- Footer -->
+    <footer class="footer p-5 text-center">
         <div class="container" style="text-align: center; margin-top: 100px; font-family: 'Manrope', sans-serif;">
             <div class="row">
                 <div class="col-md-4 footer-section">
-                    <img src="XENOCHROME-NOBG-TEXT.png" alt="Xenochrome Technologies" class="footer-logo" style="size: 100%; margin-bottom: 30px;">
-                    <p>At Xenochrome Technologies, we specialize in AI automation solutions, optimizing and simplifying major operational workflows.</p>
+                    <img src="XENOCHROME-NOBG-TEXT.png" alt="Bartini Bartending" class="footer-logo" style="size: 100%; margin-bottom: 30px;">
                 </div>
                 <div class="col-md-4 footer-section">
                     <h3>Links</h3>
                     <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="about.html">About</a>
-                <a href="pricing.html">Pricing</a>
-                <a href="contact.html">Contact</a>
+                    <a href="services.html">Services</a>
+                    <a href="about.html">Events</a>
+                    <a href="get-a-quote.html">Get a Quote</a>
+                    <a href="contact.html">Contact</a>
                 </div>
                 <div class="col-md-4 footer-section">
                     <h3>Contact</h3>
-                    <p>info@xenochrometech.com<br>+6018-2548567</p>
+                    <p>info@bartini.com<br>+6018-2548567</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="www.instagram.com/xenochrome_technologies"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Xenochrome Technologies</p>
-                <p><a href="term-conditions.html">Terms & Conditions</a>, <a href="privacy-policy.html">Privacy Policy</a></p>
+                <p style="color: white;">&copy; 2024 Bartini Bartending. All rights reserved.</p>
+                
             </div>
         </div>
+        
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        (function(d, t) {
-            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-            v.onload = function() {
-              window.voiceflow.chat.load({
-                verify: { projectID: '6650aecfbf0df4036863c791' },
-                url: 'https://general-runtime.voiceflow.com',
-                versionID: 'production'
-              });
-            }
-            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-        })(document, 'script');
-      </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

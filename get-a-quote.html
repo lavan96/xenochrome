@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Bartini Bartending</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&family=Anton+SC&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your existing CSS file -->
+    <style>
+
+body {
+            background-color: #000000;
+            color: white; /* Off-white */
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #bg{
+            background-image: url(bartini-red-bg.png);
+            background-repeat: no-repeat;
+            
+            background-attachment: fixed;
+            max-height: 100%;
+            
+        }
+
+        .navbar, .footer {
+            background-color: #000000;
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+
+        .navbar-brand, .nav-link {
+            
+            color: white !important; /* Off-white */
+            font-family: 'Silver Medal', sans-serif;
+            font-weight: 100;
+            text-transform: uppercase;
+            font-size: 0.8em;
+        }
+
+        .nav-link:hover {
+            color: #ff0000 !important; /* Gold */
+        }
+
+        .btn-primary {
+            
+            background-color: white; /* Off-white */
+            color: #000000;
+            border-color: white;
+            border-radius: 10px;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            background-color: #ff0000; /* Gold */
+            border-color: #ff0000;
+            color: white;
+            border-radius: 10px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        h1, h2, h5, p, .card-title, .card-text {
+            color: white; /* Off-white */
+        }
+
+        h1{
+            font-family: 'Silver Medal', sans-serif;
+            text-transform: uppercase;
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-family: 'Silver Medal', sans-serif;
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+
+        h5 {
+            font-family: 'Great Vibes', cursive;
+            margin-top: 1em;
+            font-size: 3em;
+            margin-bottom: 1em;
+        }
+
+        .card {
+            background-color: transparent;
+            border: 0px solid #ffd700; /* Gold */
+            border-radius: 0px;
+        }
+
+        .card-title {
+            color: white;
+        }
+
+        .card-body {
+            color: white; /* Off-white */
+        }
+
+        .footer {
+            color: white;
+        }
+
+        .footer-logo {
+    max-width: 200px;
+}
+.footer-section {
+    margin-bottom: 20px;
+}
+.footer-section h3 {
+    color: #ff0000;
+    margin-bottom: 15px;
+}
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+.footer-section a:hover {
+    color: #ff0000;
+}
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-right: 15px;
+}
+.social-icons a:hover {
+    color: #ff0000;
+}
+
+        .form-control, .form-label {
+            background-color: #000000;
+            color: #ff0000;
+            border: 1px solid #ff0000; /* Gold */
+        }
+
+        .form-control:focus {
+            background-color: #000000;
+            color: #ff0000; /* Gold */
+            border: 1px solid white; /* Off-white */
+            box-shadow: none;
+        }
+
+        
+
+        
+
+        .contact-section {
+            padding: 60px 0;
+        }
+
+        .contact-form {
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            font-weight: 600;
+        }
+
+        @font-face {
+    font-family: 'Silver Medal';
+    src: url('Silver Medal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Custom2';
+    src: url('all_things_must_pass/All Things Must Pass.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+        @media screen and (max-width: 768px) {
+            #web{
+                display:none;
+
+            }
+
+            #mobile{
+                display: block;
+            }
+
+            .web{
+                display:none;
+
+            }
+
+            .mobile{
+                display: block;
+            }
+
+            .navbar-nav{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: right;
+}
+        }
+        @media screen and (min-width: 769px) {
+            #web{
+                display:block;
+
+            }
+
+            #mobile{
+                display: none;
+            }
+
+            .web{
+                display:block;
+
+            }
+
+            .mobile{
+                display: none;
+            }
+
+            h1, h2{
+                font-size: 4em;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="BARTINI_LETTERHEAD.png" alt="" style="max-width: 20%;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgba(0, 0, 0, 0.4); border-color: #FF0000;">
+                    <span class="navbar-toggler-icon" style="align-content: center;"> <i class="fa-solid fa-bars" style="color: #FF0000;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="get-a-quote.html">Get a Quote</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="bg">
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="text-center mb-5" style="padding-top: 1em;">Get a <span style="color: #ff0000;">Quote</span></h2>
+            <form class="contact-form">
+                <div class="row" style="padding-top: 2em;">
+                    <div class="col-md-4">
+                        <label for="name" style="padding-bottom: 0.5em; padding-top: 0.5em;">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="phone" style="padding-bottom: 0.5em; padding-top: 0.5em;">Phone Number</label>
+                        <input type="text" id="phone" name="phone" class="form-control" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="email" style="padding-bottom: 0.5em; padding-top: 0.5em;">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="row" style="padding-top: 2em;">
+                    <div class="col-md-4">
+                        <label for="event-type" style="padding-bottom: 0.5em; padding-top: 0.5em;">Type of Event</label>
+                        <select id="event-type" name="event-type" class="form-control" required>
+                            <option value="wedding">Wedding</option>
+                            <option value="corporate-event">Corporate Event</option>
+                            <option value="private-function">Private Function</option>
+                            <option value="birthday">Birthday</option>
+                            <option value="bachelor-party">Bachelor Party</option>
+                            <option value="custom">Custom Event</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="event-venue" style="padding-bottom: 0.5em; padding-top: 0.5em;">Event Venue</label>
+                        <input type="text" id="event-venue" name="event-venue" class="form-control" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="event-date" style="padding-bottom: 0.5em; padding-top: 0.5em;">Date & Time of Event</label>
+                        <input type="datetime-local" id="event-date" name="event-date" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="row" style="padding-top: 2em;">
+                    <div class="col-md-4">
+                        <label for="event-theme" style="padding-bottom: 0.5em; padding-top: 0.5em;">Event Theme</label>
+                        <input type="text" id="event-theme" name="event-theme" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="event-hours" style="padding-bottom: 0.5em; padding-top: 0.5em;">Number of Hours</label>
+                        <input type="number" id="event-hours" name="event-hours" class="form-control" min="1" max="24" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="event-pax" style="padding-bottom: 0.5em; padding-top: 0.5em;">Number of Pax</label>
+                        <input type="number" id="event-pax" name="event-pax" class="form-control" min="1" required>
+                    </div>
+                </div>
+
+                <div class="row" style="padding-top: 2em;">
+                    <div class="col-md-12">
+                        <label for="services" style="padding-bottom: 0.5em; padding-top: 0.5em;">Services</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="bar-stand" id="service-bar-stand">
+                            <label class="form-check-label" for="service-bar-stand">Bar Stand & Fittings</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="bartenders" id="service-bartenders">
+                            <label class="form-check-label" for="service-bartenders">Bartenders & Mixologist</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="servers" id="service-servers">
+                            <label class="form-check-label" for="service-servers">Servers (Usher/Usherette)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="beverages" id="service-beverages">
+                            <label class="form-check-label" for="service-beverages">Beverages / Drinks</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="glassware" id="service-glassware">
+                            <label class="form-check-label" for="service-glassware">Glassware & Bar Equipment</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="padding-top: 2em;">
+                    <div class="col-md-12">
+                        <label for="additional-info" style="padding-bottom: 0.5em; padding-top: 0.5em;">Additional Information</label>
+                        <textarea id="additional-info" name="additional-info" class="form-control"></textarea>
+                    </div>
+                </div>
+
+                <div class="row" style="padding-top: 2em;">
+                    <div class="col-md-12">
+                        <a href="https://hook.eu2.make.com/6w9h2kz1hc9a33vw05a65t6w83vrleua"><button type="submit" class="btn btn-primary">Submit</button></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+    <!-- Footer -->
+    <footer class="footer p-5 text-center">
+        <div class="container" style="text-align: center; margin-top: 100px; font-family: 'Manrope', sans-serif;">
+            <div class="row">
+                <div class="col-md-4 footer-section">
+                    <img src="BARTINI_PRIMARY.png" alt="Bartini Bartending" class="footer-logo" style="size: 10%; margin-bottom: 30px;">
+                </div>
+                <div class="col-md-4 footer-section">
+                    <h3>Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="events.html">Events</a>
+                    <a href="get-a-quote.html">Get a Quote</a>
+                    
+                </div>
+                <div class="col-md-4 footer-section">
+                    <h3>Contact</h3>
+                    <p>info@bartini.com<br>+6018-2548567</p>
+                    <div class="social-icons">
+                        <a href="www.instagram.com/xenochrome_technologies"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p style="color: white;">&copy; 2024 Bartini Bartending. All rights reserved.</p>
+            </div>
+        </div>
+    
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

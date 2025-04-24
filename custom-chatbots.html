@@ -6,6 +6,7 @@
     <title>Custom Chatbots - Xenochrome Technologies</title>
     <meta name="description" content="Create custom chatbots with Xenochrome Technologies to enhance customer engagement and streamline interactions. Tailor-made solutions for your business.">
     <meta name="keywords" content="Custom chatbots, Xenochrome Technologies, customer engagement, tailored solutions">
+    <meta name="robots" content="index, follow">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Bebas+Neue&family=Ubuntu:wght@700&family=Manrope:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -539,9 +540,9 @@ h2{
                 </div>
                 <div class="col-md-4 footer-section">
                     <h3>Contact</h3>
-                    <p>info@xenochrometech.com<br>+6018-2548567</p>
+                    <p>info@xenochrome.tech<br>+6018-2548567</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="www.instagram.com/xenochrome_technologies"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
@@ -556,18 +557,29 @@ h2{
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        (function(d, t) {
-            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-            v.onload = function() {
-              window.voiceflow.chat.load({
-                verify: { projectID: '6650aecfbf0df4036863c791' },
-                url: 'https://general-runtime.voiceflow.com',
-                versionID: 'production'
-              });
-            }
-            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-        })(document, 'script');
-      </script>
+    
+<div style="width: 0; height: 0;" id="VG_OVERLAY_CONTAINER">
+    <!-- Here is where Voiceglow renders the widget. -->
+    <!-- Set render to 'full-width' then adjust the width and height to 500px (for example) to render the chatbot itself without the popup. -->
+</div>
+
+<!-- Remove 'defer' if you want widget to load faster (Will affect website loading) -->
+<script defer>
+    (function() {
+        window.VG_CONFIG = {
+            ID: "s8640fxupaf9m4vw",
+            region: 'na', // 'eu' or 'na'corresponding to Europe and North America
+            render: 'popup', // popup or full-width
+            stylesheets: [
+                // Base Voiceglow CSS
+                "https://storage.googleapis.com/voiceglow-cdn/vg_live_build/styles.css",
+                // Add your custom css stylesheets, Can also add relative URL ('/public/your-file.css)
+            ],
+        }
+        var VG_SCRIPT = document.createElement("script");
+        VG_SCRIPT.src = "https://storage.googleapis.com/voiceglow-cdn/vg_live_build/vg_bundle.js";
+        document.body.appendChild(VG_SCRIPT);
+    })()
+</script>
 </body>
 </html>

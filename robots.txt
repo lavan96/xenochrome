@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Allow: sitemap.xml
+Allow: sitemap.html
+
+Sitemap: https://www.xenochrome.tech/sitemap.xml

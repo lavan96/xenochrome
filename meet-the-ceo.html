@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Xenochrome Technologies</title>
-    <meta name="description" content="Learn about Xenochrome Technologies, your trusted partner in AI-driven automation solutions. Discover our mission, vision, and unique offerings.">
-    <meta name="keywords" content="About, Xenochrome Technologies, AI automation, mission, vision">
-    <meta name="robots" content="index, follow">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Ubuntu:wght@700&family=Manrope:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Meet the CEO - Xenochrome Technologies</title>
+    <meta name="description" content="Meet Lavanethaan Ravachandran, CEO of Xenochrome Technologies. Learn about his vision, leadership, and journey in AI automation."/>
+    <meta name="keywords" content="Xenochrome Technologies, CEO, Lavanethaan Ravachandran, leadership, AI automation"/>
+    <meta name="robots" content="index, follow"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Ubuntu:wght@700&family=Manrope:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
     <style>
+        
+        .ceo-section { padding: 60px 20px; }
+        .ceo-section .section-title { color: #ff0000; margin-bottom: 20px; font-weight: 600; }
+        .ceo-photo { max-width: 100%; border-radius: 8px; box-shadow: 0 0 10px rgba(255,0,0,0.3); }
+        
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #000;
@@ -150,8 +155,32 @@ max-width: 400px;
 h1{
     font-size: 2em;
 }
+
+#web{
+    display: none;
+}
+
+#mobile{
+    display: block;
+}
    }
 
+   @media screen and (min-width: 769px){
+
+    #web{
+    display: block;
+}
+
+#mobile{
+    display: none;
+}
+
+.navbar a:hover{
+    color: red;
+}
+
+   }
+   
     </style>
 </head>
 <body>
@@ -175,21 +204,40 @@ h1{
         </nav>
     </div>
     </header>
-    <section class="about-section">
+    <section class="ceo-section" id="web">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 about-content">
-                    <h2 style="font-family: 'Ubuntu', sans-serif; font-size: 40px; text-align: left; margin-bottom: 40px;">About Xenochrome Technologies: Your Trusted AI-Driven Automation Partner</h2>
-                    <h3 class="section-title" style="font-size: 25px; font-weight: 600;">Who We Are</h3>
-                    <p>Welcome to Xenochrome Technologies, where innovation meets automation! We are a dynamic team of tech enthusiasts and industry experts dedicated to revolutionizing business processes through cutting-edge AI-driven automation solutions. At Xenochrome, we believe in the power of technology to transform the way you work, and we're here to be your partner in that journey.</p>
-                    <h3 class="section-title" style="font-size: 25px; font-weight: 600;">Our Mission</h3>
-                    <p>Our mission at Xenochrome is to empower businesses with intelligent automation solutions that enhance efficiency, drive growth, and elevate the overall customer experience. We're passionate about harnessing the potential of artificial intelligence to bring about positive change for our clients.</p>
-                    <h3 class="section-title" style="font-size: 25px; font-weight: 600;">What Sets Us Apart</h3>
-                    <p><span style="color: #ff0000; font-weight: 600;">AI-Powered Automation: </span>At the core of our services is the seamless integration of artificial intelligence into various business processes. From lead generation and client outreach to competitor research and content creation, we leverage advanced AI algorithms to streamline and optimize your operations.</p>
-                    <p><span style="color: #ff0000; font-weight: 600;">Comprehensive Services: </span>Xenochrome is your one-stop solution for a wide range of automation needs. Whether you're looking to boost your marketing strategy, improve after-sales support, or enhance overall productivity, our comprehensive suite of services is designed to meet your unique requirements.</p>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="CEO.jpeg" alt="Lavanethaan Ravachandran, CEO" class="ceo-photo">
                 </div>
-                <div class="col-md-6 text-center">
-                    <img src="XENOCHROME-NOBG-01.png" alt="Xenochrome Logo" class="logo-img" id="logo-img">
+                <div class="col-md-8" style="padding-left: 4em;">
+                    <h2 style="font-family: 'Ubuntu', sans-serif; font-size: 40px; margin-bottom: 30px;">Meet Our CEO: Lavanethaan Ravachandran</h2>
+                    <h3 class="section-title" style="font-size: 25px;">Biography</h3>
+                    <p>Lavanethaan Ravachandran is the visionary founder and CEO of Xenochrome Technologies. Holding a Bachelor’s in Business Administration (Honours) and an HRDC-accredited trainer certification, he brings extensive experience in digital marketing, web development, and data science to every project. Under his guidance, Xenochrome has delivered tailored AI-driven automation solutions across healthcare, education, hospitality, and finance.</p>
+                    <h3 class="section-title" style="font-size: 25px;">Leadership Philosophy</h3>
+                    <p>Lavan believes in people-centric innovation. He fosters a culture of continuous learning, collaboration, and integrity. His hands-on approach ensures that every solution is tailored to client needs, delivering measurable impact and sustainable growth.</p>
+                    <h3 class="section-title" style="font-size: 25px;">Vision & Mission</h3>
+                    <p>As CEO, Lavan’s mission is to position Xenochrome at the forefront of AI-driven automation, empowering businesses to harness the full potential of intelligent technologies. He envisions a future where seamless automation elevates human creativity and operational excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ceo-section" id="mobile">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <h2 style="font-family: 'Ubuntu', sans-serif; font-size: 40px; margin-bottom: 2em;">Meet Our CEO: Lavanethaan Ravachandran</h2>
+                    <img src="CEO.jpeg" alt="Lavanethaan Ravachandran, CEO" class="ceo-photo">
+                </div>
+                <div class="col-md-8" style="padding-top: 4em;">
+                    
+                    <h3 class="section-title" style="font-size: 25px;">Biography</h3>
+                    <p>Lavanethaan Ravachandran is the visionary founder and CEO of Xenochrome Technologies. Holding a Bachelor’s in Business Administration (Honours) and an HRDC-accredited trainer certification, he brings extensive experience in digital marketing, web development, and data science to every project. Under his guidance, Xenochrome has delivered tailored AI-driven automation solutions across healthcare, education, hospitality, and finance.</p>
+                    <h3 class="section-title" style="font-size: 25px;">Leadership Philosophy</h3>
+                    <p>Lavan believes in people-centric innovation. He fosters a culture of continuous learning, collaboration, and integrity. His hands-on approach ensures that every solution is tailored to client needs, delivering measurable impact and sustainable growth.</p>
+                    <h3 class="section-title" style="font-size: 25px;">Vision & Mission</h3>
+                    <p>As CEO, Lavan’s mission is to position Xenochrome at the forefront of AI-driven automation, empowering businesses to harness the full potential of intelligent technologies. He envisions a future where seamless automation elevates human creativity and operational excellence.</p>
                 </div>
             </div>
         </div>
@@ -228,42 +276,5 @@ h1{
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-
-    <div style="width: 0; height: 0;" id="VG_OVERLAY_CONTAINER">
-        <!-- Here is where TIXAE Agents renders the widget. -->
-        <!-- Set render to 'full-width' then adjust the width and height to 500px (for example) to render the chatbot itself without the popup. -->
-    </div>
-    
-    <!-- Remove 'defer' if you want widget to load faster (Will affect website loading) -->
-    <script defer>
-        (function() {
-            window.VG_CONFIG = {
-                ID: "NE4wWwtA5BGy5Cm", // YOUR AGENT ID
-                region: 'na', // YOUR ACCOUNT REGION 
-                render: 'bottom-right', // can be 'full-width' or 'bottom-left' or 'bottom-right'
-                // modalMode: true, // Set this to 'true' to open the widget in modal mode
-                stylesheets: [
-                    // Base TIXAE Agents CSS
-                    "https://vg-bunny-cdn.b-cdn.net/vg_live_build/styles.css",
-                    // Add your custom css stylesheets, Can also add relative URL ('/public/your-file.css)
-                ],
-                // THIS IS SUPPOSED TO BE CHANGED OR REMOVED.
-                // user: {
-                //     name: 'John Doe', // User's name
-                //     email: 'johndoe@gmail.com', // User's email
-                //     phone: '+1234567890', // User's phone number
-                // }
-                // Optional user data -- end
-                // **
-                // userID: 'USER_ID', // If you want to use your own user_id
-                // autostart: true, // Whether to autostart the chatbot with the proactive message
-            }
-            var VG_SCRIPT = document.createElement("script");
-            VG_SCRIPT.src = "https://vg-bunny-cdn.b-cdn.net/vg_live_build/vg_bundle.js";
-            VG_SCRIPT.defer = true; // Remove 'defer' if you want widget to load faster (Will affect website loading)
-            document.body.appendChild(VG_SCRIPT);
-        })()
-    </script>
 </body>
 </html>

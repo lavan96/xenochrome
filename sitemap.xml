@@ -2,72 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://xenochrome.tech/index.html</loc>
-    <lastmod>2024-05-23</lastmod>
+    <lastmod>2025-04-29</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://xenochrome.tech/about.html</loc>
-    <lastmod>2024-05-23</lastmod>
+    <lastmod>2025-04-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://xenochrome.tech/services.html</loc>
-    <lastmod>2024-05-23</lastmod>
+    <lastmod>2025-04-29</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://xenochrome.tech/pricing.html</loc>
-    <lastmod>2024-05-23</lastmod>
+    <lastmod>2025-04-29</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://xenochrome.tech/contact.html</loc>
-    <lastmod>2024-05-23</lastmod>
+    <lastmod>2025-04-29</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://xenochrome.tech/data-management.html</loc>
-    <lastmod>2024-05-23</lastmod>
+    <lastmod>2025-04-29</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://xenochrome.tech/backend-automations.html</loc>
-    <lastmod>2024-05-23</lastmod>
+    <lastmod>2025-04-29</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://xenochrome.tech/delphi.html</loc>
-    <lastmod>2024-05-23</lastmod>
+    <lastmod>2025-04-29</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://xenochrome.tech/bothive.html</loc>
-    <lastmod>2024-05-23</lastmod>
+    <lastmod>2025-04-29</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://xenochrome.tech/custom-chatbots.html</loc>
-    <lastmod>2024-05-23</lastmod>
+    <lastmod>2025-04-29</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://xenochrome.tech/ai-personas.html</loc>
-    <lastmod>2024-05-23</lastmod>
+    <lastmod>2025-04-29</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://xenochrome.tech/voice-agents.html</loc>
-    <lastmod>2024-05-23</lastmod>
+    <lastmod>2025-04-29</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://xenochrome.tech/term-conditions.html</loc>
-    <lastmod>2024-05-23</lastmod>
+    <lastmod>2025-04-29</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://xenochrome.tech/privacy-policy.html</loc>
-    <lastmod>2024-05-23</lastmod>
+    <lastmod>2025-04-29</lastmod>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://xenochrome.tech/meet-the-ceo.html</loc>
+    <lastmod>2025-04-29</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>

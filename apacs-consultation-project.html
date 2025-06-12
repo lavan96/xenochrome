@@ -513,29 +513,33 @@ h2{
     </section>
 
     <footer>
-        <div class="container" style="font-family:'Manrope',sans-serif;">
-            <div class="row text-center">
+        <div class="container" style="text-align: center; margin-top: 100px; font-family: 'Manrope', sans-serif;">
+            <div class="row">
                 <div class="col-md-4 footer-section">
-                    <img src="XENOCHROME-NOBG-TEXT.png" alt="Xenochrome Technologies" class="footer-logo mb-3">
-                    <p>At Xenochrome Technologies, we specialize in AI automation and digital solutions, optimizing major workflows.</p>
+                    <img src="XENOCHROME-NOBG-TEXT.png" alt="Xenochrome Technologies" class="footer-logo" style="size: 100%; margin-bottom: 30px;">
+                    <p>At Xenochrome Technologies, we specialize in AI automation solutions, optimizing and simplifying major operational workflows.</p>
                 </div>
                 <div class="col-md-4 footer-section">
                     <h3>Links</h3>
-                    <a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a>
+                    <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html">Contact</a>
                 </div>
                 <div class="col-md-4 footer-section">
                     <h3>Contact</h3>
-                    <p>info@xenochrome.tech<br>+6018-2548567</p>
+                    <p style="text-align: center;">info@xenochrome.tech<br>+6018-2548567</p>
                     <div class="social-icons">
                         <a href="https://www.instagram.com/xenochrome_technologies"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/60182548567"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://www.linkedin.com/company/xenochrome-technologies/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/60182548567"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/company/xenochrome-technologies/"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom text-center mt-4">
-                <p>&copy; 2024 Xenochrome Technologies</p>
-                <p><a href="term-conditions.html">Terms & Conditions</a>, <a href="privacy-policy.html">Privacy Policy</a></p>
+            <div class="footer-bottom">
+                <p style="text-align: center;">&copy; 2024 Xenochrome Technologies</p>
+                <p style="text-align: center;"><a href="term-conditions.html">Terms & Conditions</a>, <a href="privacy-policy.html">Privacy Policy</a></p>
             </div>
         </div>
     </footer>
@@ -543,5 +547,41 @@ h2{
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <div style="width: 0; height: 0;" id="VG_OVERLAY_CONTAINER">
+        <!-- Here is where TIXAE Agents renders the widget. -->
+        <!-- Set render to 'full-width' then adjust the width and height to 500px (for example) to render the chatbot itself without the popup. -->
+    </div>
+    
+    <!-- Remove 'defer' if you want widget to load faster (Will affect website loading) -->
+    <script defer>
+        (function() {
+            window.VG_CONFIG = {
+                ID: "NE4wWwtA5BGy5Cm", // YOUR AGENT ID
+                region: 'na', // YOUR ACCOUNT REGION 
+                render: 'bottom-right', // can be 'full-width' or 'bottom-left' or 'bottom-right'
+                // modalMode: true, // Set this to 'true' to open the widget in modal mode
+                stylesheets: [
+                    // Base TIXAE Agents CSS
+                    "https://vg-bunny-cdn.b-cdn.net/vg_live_build/styles.css",
+                    // Add your custom css stylesheets, Can also add relative URL ('/public/your-file.css)
+                ],
+                // THIS IS SUPPOSED TO BE CHANGED OR REMOVED.
+                // user: {
+                //     name: 'John Doe', // User's name
+                //     email: 'johndoe@gmail.com', // User's email
+                //     phone: '+1234567890', // User's phone number
+                // }
+                // Optional user data -- end
+                // **
+                // userID: 'USER_ID', // If you want to use your own user_id
+                // autostart: true, // Whether to autostart the chatbot with the proactive message
+            }
+            var VG_SCRIPT = document.createElement("script");
+            VG_SCRIPT.src = "https://vg-bunny-cdn.b-cdn.net/vg_live_build/vg_bundle.js";
+            VG_SCRIPT.defer = true; // Remove 'defer' if you want widget to load faster (Will affect website loading)
+            document.body.appendChild(VG_SCRIPT);
+        })()
+    </script>
 </body>
 </html>

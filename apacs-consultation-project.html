@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Solutions - APACS Consultation - Xenochrome Technologies</title>
+    <meta name="description" content="Xenochrome’s Digital Solutions Suite tailored for APACS Consultation, offering business consulting, renovation services, and car dealership management.">
+    <meta name="keywords" content="APACS Consultation, business consulting, renovation services, car dealership, web development, admin dashboard, request-based listings">
+    <meta name="robots" content="index, follow">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Bebas+Neue&family=Ubuntu:wght@700&family=Manrope:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon.png" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #000;
+            color: white;
+            text-align: left;
+        }
+        h1, h2{
+            font-family: 'Poppins', sans-serif;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        h2{
+            font-size: 55px; 
+            margin-top: 50px;
+        }
+        h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        h4 {
+            font-family: 'Roboto Mono', sans-serif;
+            font-size: 25px;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        .header {
+            background-color: #000;
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 0px;
+        }
+        .header img {
+            max-width: 150px;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: white;
+            
+        }
+        .about-section {
+            padding: 0px;
+        }
+        .about-section h2 {
+            margin-bottom: 10px;
+        }
+        .about-section p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .about-section .section-title {
+            color: #fdc528ff;
+        }
+        .about-section .about-content {
+            margin-bottom: 0px;
+        }
+        .about-section .logo-img {
+            max-width: 70%;
+            height: 90vh;
+            display: flex;
+            
+        }
+        footer {
+    background-color: #000;
+    color: white;
+    padding: 50px 0;
+}
+.footer-logo {
+    max-width: 200px;
+}
+.footer-section {
+    margin-bottom: 20px;
+}
+.footer-section h3 {
+    color: #ff0000;
+    margin-bottom: 15px;
+    font-family: 'Manrope', sans-serif;
+}
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+.footer-section a:hover {
+    color: #ff0000;
+}
+.social-icons a {
+    color: #ff0000;
+    font-size: 24px;
+    margin-right: 15px;
+}
+.social-icons a:hover {
+    color: white;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+}
+.header .header-logo {
+            max-width: 220px;
+            
+        }
+    
+
+.navbar a:hover{
+    color: red;
+}
+
+.navbar a{
+    color: white;
+    text-transform: uppercase;
+}
+
+    
+#thumbnail img{
+    height: 50vh;
+    margin-bottom: 30px;
+    margin-top: 2em;
+}
+
+.fa-shopify {
+    font-size: 300px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+}
+
+.card {
+            background-color: transparent;
+            
+            padding: 0px;
+            margin-bottom:  30px;
+            text-align: left;
+           
+           
+
+        }
+       
+        .card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            
+            border-radius: 20px;
+        }
+        .card h3 {
+            
+            font-family: 'Roboto Mono', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            
+            
+            margin-left: 0.5em;
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: block;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            width: 150px;
+        }
+        .btn-yellow {
+            background-color: transparent;
+            color: #fdc528ff;
+            border: 1px solid #fdc528ff;
+        }
+
+        .btn-yellow:hover {
+            background-color: #fdc528ff;
+            color: black;
+            border: 1px solid #fdc528ff;
+        }
+        .btn-green {
+            background-color: transparent;
+            color: #7ed957ff;
+            border: 1px solid #7ed957ff;
+        }
+
+        .btn-green:hover {
+            background-color: #7ed957ff;
+            color: black;
+            border: 1px solid #7ed957ff;
+        }
+
+        .btn-brown {
+            background-color: transparent;
+            color: #d29635ff;
+            border: 1px solid #d29635ff;
+        }
+
+        .btn-brown:hover {
+            background-color: #d29635ff;
+            color: black;
+            border: 1px solid #d29635ff;
+        }
+
+        #demo {
+            margin-bottom: 100px;
+            margin-top: 60px;
+        }
+
+        .btn-back {
+            width: 60px;
+            height: 60px;
+            background-color: #fdc528ff;
+            
+            border: 2px solid #fdc528ff;
+            font-size: 20px;
+            border-radius: 15px;
+            text-align: justify;
+            padding: auto;
+            
+
+        }
+
+@media screen and (min-width: 769px) {
+    .demo-mobile{ display: none;}
+
+    .demo-web{ display: block;}
+}
+
+@media screen and (max-width: 768px) {
+   
+ 
+   nav{
+   
+       text-align: right;
+       text-transform: uppercase;
+       font-weight: 900;
+       font-size: 1.2em;
+       color: #ffffffff;
+       
+   }
+   .navbar-nav{
+      
+       padding: 1em;
+       margin-top: 1em;
+       margin-bottom: 1em;
+   }
+   
+   .navbar a:hover{
+    color: red;
+   }
+   
+   #header-logo {
+            max-width: 7em;
+        }
+
+   .header-content img {
+       min-width: 100%;
+       margin-top: 5em;
+   }
+#logo-img{
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+    background-size: contain;
+}
+  
+h2{
+    font-size: 2.5em;
+    margin-bottom: 150px;
+   
+}
+
+.about-section h3{
+    text-align: left;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+    font-size: 2em;
+}
+.about-section{
+    padding: 1em;
+}
+
+#thumbnail img{
+    
+    width: 100%;
+    height: auto;
+    margin-bottom: 3em;
+}
+
+.fa-shopify {
+    font-size: 15em;
+    
+
+}
+.card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            vertical-align: middle;
+            border-radius: 20px;
+        }
+        .card h3 {
+            
+            font-family: 'Roboto Mono', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            
+            
+            padding-left: 3em;
+            
+        }
+
+        .card {
+            max-height: fit-content;
+        }
+
+        #demo {
+            margin-bottom: 100px;
+            margin-top: 60px;
+        }
+
+        .demo-web {
+            display: none;
+        }
+
+        .demo-mobile {
+            display: block;
+            
+        }
+
+       .demo-mobile h3 {
+        text-align: left;
+        margin-left: 0.5em;
+        
+       }
+
+       .demo-mobile .row {
+        margin-right: 0;
+        padding-right: 0;
+        column-gap: 0px;
+       }
+
+      
+   }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#"><img src="XENOCHROME-NOBG-TEXT.png" alt="Xenochrome Technologies" class="header-logo" id="header-logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto" style="font-family: 'Roboto Condensed', sans-serif;">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="meet-the-ceo.html">CEO Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div id="thumbnail"><img src="APACS Consultation - logo.png" alt="APACS Consultation Logo"></div>
+                </div>
+                <div class="col-md-8 d-flex align-items-center">
+                    <a href="https://apacsconsultation.com/" target="_blank" class="btn btn-yellow">VIEW WEBSITE</a>
+                </div>
+            </div>
+            <h4 class="section-title" style="color: white;">1. Project Overview:</h4>
+            <h3 class="section-title" style="font-weight:600;">APACS Consultation provides strategic business advisory, renovation project planning, and first-hand car dealership services, with inquiry-based listings for second-hand and reconditioned vehicles. We delivered a clean, light-themed site with bright-yellow accents and a powerful custom admin dashboard to manage all three verticals.</h3>
+
+            <h4 class="section-title" style="color: white;">2. Client Objectives:</h4>
+            <ul style="list-style:none; padding-left:0;">
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">Showcase Service Verticals</span><br><br><span style="color:#fdc528ff;">Clearly present Business Portfolio, Renovation Services, and First-Hand Car Dealership offerings.</span></li>
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">Request-Based Car Listings</span><br><br><span style="color:#fdc528ff;">Allow customers to browse second-hand and recon vehicles and submit inquiry forms.</span></li>
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">Custom Admin Dashboard</span><br><br><span style="color:#fdc528ff;">Enable APACS staff to upload and manage consultation projects, renovation jobs, and car inventory with visibility toggles.</span></li>
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">Lead Capture</span><br><br><span style="color:#fdc528ff;">Streamline enquiry forms for consultations, renovation quotes, and car requests.</span></li>
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">Brand Consistency</span><br><br><span style="color:#fdc528ff;">Use a light, minimalist UI with bright yellow highlights to reinforce APACS’s energetic, forward-thinking identity.</span></li>
+            </ul>
+
+            <h4 class="section-title" style="color: white;">3. Key Challenges:</h4>
+            <ul style="list-style:none; padding-left:0;">
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">Multiple Verticals</span><br><br><span style="color:#fdc528ff;">Three distinct service types each require their own presentation and management workflows.</span></li>
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">No E-commerce Flow</span><br><br><span style="color:#fdc528ff;">Cars aren’t sold directly online—listings must drive requests and follow-up.</span></li>
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">Admin Flexibility</span><br><br><span style="color:#fdc528ff;">Off-the-shelf CMSes couldn’t provide the granular controls (category management, toggles) APACS needed.</span></li>
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">Performance & Responsiveness</span><br><br><span style="color:#fdc528ff;">High-resolution project images and dynamic listings demanded optimized loading on all devices.</span></li>
+            </ul>
+
+            <h4 class="section-title" style="color: white;">4. Our Solution:</h4>
+            <h4 class="section-title" style="font-size:1.3em; color: white;">4.1 Information Architecture:</h4>
+            <ul style="list-style:none; padding-left:0;">
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">Hero Banner</span><br><br><span style="color:#fdc528ff;">Full-width tagline “Empower Your Business, Renovate Your Space, Drive Your Future” atop a bright-yellow gradient overlay..</span></li>
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">Service Sections</span><br><br><span style="color:#fdc528ff;">
+                    <ul style="padding-left: 1em; color: #fdc528ff;">
+                        <li style=" padding-top: 0.5em; padding-bottom: 1em;">
+                            <span style="color: #fff; font-family:'Ubuntu',sans-serif; font-size:1em;">Business Portfolio:</span> Card grid with project thumbnails and “Learn More” links.
+                        </li>
+                        <li style=" padding-top: 0.5em; padding-bottom: 1em;">
+                            <span style="color: #fff; font-family:'Ubuntu',sans-serif; font-size:1em;">Renovation Services:</span> Before/after slider galleries and quote request form.
+                        </li>
+                        <li style=" padding-top: 0.5em; padding-bottom: 1em;">
+                            <span style="color: #fff; font-family:'Ubuntu',sans-serif; font-size:1em;">Car Dealership:</span> First-hand inventory listing; second-hand & recon inquiry forms.
+                        </li>
+                    </ul>
+                </span></li>
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">Enquiry Forms</span><br><br><span style="color:#fdc528ff;">Contextual forms embedded in each section, driving leads into Supabase.</span></li>
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">Footer</span><br><br><span style="color:#fdc528ff;">Quick links, contact info, and social icons.</span></li>
+            </ul>
+            <h4 class="section-title" style="font-size:1.3em; color: white;">4.2 Visual & UX:</h4>
+            <ul style="list-style:none; padding-left:0;">
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">Light Minimalist Theme</span><br><br><span style="color:#fdc528ff;">Crisp white backgrounds with charcoal text, punctuated by bright-yellow buttons and hover states.</span></li>
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">Responsive Grid & Listings</span><br><br><span style="color:#fdc528ff;">Flexbox and CSS Grid for seamless adaptation—three-column layout on desktop collapsing to single column on mobile.</span></li>
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">Interactive Elements</span><br><br><span style="color:#fdc528ff;">Subtle hover animations on cards, inline form validation, and smooth scroll-to-section links.</span></li>
+            </ul>
+            <h4 class="section-title" style="font-size:1.3em; color: white;">4.3 Admin Dashboard & User Features:</h4>
+            <ul style="list-style:none; padding-left:0;">
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">Custom Admin Console</span><br><br>
+                
+                <ul style="padding-left: 1em; color: #fdc528ff;">
+                        <li style=" padding-top: 0.5em; padding-bottom: 1em;">
+                            <span style="color: #fff; font-family:'Ubuntu',sans-serif; font-size:1em;">Business Portfolio Management:</span> Add/edit projects with title, description, images, and publish toggle.
+                        </li>
+                        <li style=" padding-top: 0.5em; padding-bottom: 1em;">
+                            <span style="color: #fff; font-family:'Ubuntu',sans-serif; font-size:1em;">Renovation Services Management:</span> Upload before/after photos, assign service categories, and enable/disable offerings.
+                        </li>
+                        <li style=" padding-top: 0.5em; padding-bottom: 1em;">
+                            <span style="color: #fff; font-family:'Ubuntu',sans-serif; font-size:1em;">Car Dealership Management:</span>
+
+                            <ul style="padding-left: 1em; padding-top: 1em; color: #fdc528ff; font-size: 0.85em;">
+                        <li style=" padding-top: 0.5em; padding-bottom: 1em;">
+                            <span style="color: #fff; font-family:'Ubuntu',sans-serif; font-size:1em;">First-Hand Cars:</span> Add/edit projects with title, description, images, and publish toggle.
+                        </li>
+                        <li style=" padding-top: 0.5em; padding-bottom: 1em;">
+                            <span style="color: #fff; font-family:'Ubuntu',sans-serif; font-size:1em;">Second-Hand & Recon Cars:</span> View incoming requests, update availability, and respond directly from the dashboard..
+                        </li>
+                        
+                    </ul>
+                        </li>
+                    </ul>
+                
+                </li>
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">Role-Based Access</span><br><br><span style="color:#fdc528ff;">Secure login for admins with granular permissions per vertical.</span></li>
+            </ul>
+            <h4 class="section-title" style="font-size:1.3em; color: white;">4.4 Technical Stack:</h4>
+            <ul style="list-style:none; padding-left:0;">
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">Frontend</span><br><br><span style="color:#fdc528ff;">Vite.js + Next.js (React) for fast builds & server-side rendering</span></li>
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">Backend & Auth</span><br><br><span style="color:#fdc528ff;">Supabase for database, authentication, and real-time data</span></li>
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">Hosting & CDN</span><br><br><span style="color:#fdc528ff;">Vercel for global edge deployment</span></li>
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">Styling & Utilities</span><br><br><span style="color:#fdc528ff;">Tailwind CSS, PostCSS, and Headless UI for consistent component styling</span></li>
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="font-family:'Ubuntu',sans-serif; font-size:1.3em;">Forms & Analytics</span><br><br><span style="color:#fdc528ff;">Supabase-triggered emails and Google Analytics integration</span></li>
+            </ul>
+            <h4 class="section-title" style="color: white;">5. Results & Impact:</h4>
+            <ul style="padding-left:1em; color:#fdc528ff;">
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="color: #fff; font-family:'Ubuntu',sans-serif; font-size:1em;">60% Increase</span> in form submissions within two months</li>
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="color:#fff; font-family:'Ubuntu',sans-serif; font-size:1em;">Admin Efficiency</span>—manage new entries in under 5 minutes</li>
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="color:#fff; font-family:'Ubuntu',sans-serif; font-size:1em;">40% Faster</span> page loads via image optimization</li>
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="color:#fff; font-family:'Ubuntu',sans-serif; font-size:1em;">75% Lift</span> in time-on-page for service details</li>
+            </ul>
+            <h4 class="section-title" style="color: white;">6. Next Steps:</h4>
+            <ul style="padding-left:1em; color:#fdc528ff;">
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="color: #fff; font-family:'Ubuntu',sans-serif; font-size:1em;">CRM Integration:</span> Sync enquiry data with a CRM for automated follow-up sequences.</li>
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="color: #fff; font-family:'Ubuntu',sans-serif; font-size:1em;">Client Portal:</span> Build a secure customer login area to track request statuses.</li>
+                <li style=" padding-top: 0.5em; padding-bottom: 1em;"><span style="color: #fff; font-family:'Ubuntu',sans-serif; font-size:1em;">Multilingual Support:</span> Add Malay and English toggles to broaden regional reach.</li>
+            </ul>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <a href="https://apacsconsultation.com/" target="_blank" class="btn btn-yellow">VIEW WEBSITE</a>
+                </div>
+            </div>
+
+            <div class="container demo-web mt-5" id="demo">
+                <div class="card back-card">
+                    <div class="row align-items-center">
+                        <div class="col-1">
+                            <a href="digital-solutions.html"><button type="button" class="btn btn-back"><i class="fa-solid fa-arrow-left"></i></button></a>
+                        </div>
+                        <div class="col-11">
+                            <h3>Back to<br> Digital Solutions</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container" style="font-family:'Manrope',sans-serif;">
+            <div class="row text-center">
+                <div class="col-md-4 footer-section">
+                    <img src="XENOCHROME-NOBG-TEXT.png" alt="Xenochrome Technologies" class="footer-logo mb-3">
+                    <p>At Xenochrome Technologies, we specialize in AI automation and digital solutions, optimizing major workflows.</p>
+                </div>
+                <div class="col-md-4 footer-section">
+                    <h3>Links</h3>
+                    <a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a>
+                </div>
+                <div class="col-md-4 footer-section">
+                    <h3>Contact</h3>
+                    <p>info@xenochrome.tech<br>+6018-2548567</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/xenochrome_technologies"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/60182548567"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/company/xenochrome-technologies/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom text-center mt-4">
+                <p>&copy; 2024 Xenochrome Technologies</p>
+                <p><a href="term-conditions.html">Terms & Conditions</a>, <a href="privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
